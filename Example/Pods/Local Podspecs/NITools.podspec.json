@@ -1,9 +1,9 @@
 {
   "name": "NITools",
   "version": "0.1.0",
-  "summary": "A short description of NITools.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/nixinsheng/NITools",
+  "summary": "(A short description of NITools.)-个人工具类集合整理:尝试组件开发",
+  "description": "个人工具类集合整理:尝试组件开发-后续会陆续引入新组件",
+  "homepage": "https://github.com/wvqusrtg/NITools",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,39 @@
     "nixinsheng": "1911398892@qq.com"
   },
   "source": {
-    "git": "https://github.com/nixinsheng/NITools.git",
+    "git": "https://github.com/wvqusrtg/NITools.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "NITools/Classes/**/*"
+  "source_files": "NITools/Classes/**/*",
+  "resource_bundles": {
+    "NITools": [
+      "NITools/Assets/*.png"
+    ]
+  },
+  "public_header_files": "Pod/Classes/**/*.h",
+  "frameworks": [
+    "UIKit",
+    "MapKit"
+  ],
+  "libraries": [
+    "resolv",
+    "iconv",
+    "stdc++",
+    "c++",
+    "sqlite3"
+  ],
+  "dependencies": {
+    "AFNetworking": [
+      "~> 2.3"
+    ],
+    "Masonry": [
+
+    ],
+    "YYText": [
+
+    ]
+  }
 }

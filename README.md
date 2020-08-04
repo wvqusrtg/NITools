@@ -10,7 +10,29 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+## Func
+```
+/Users/nixs/Documents/iOSDemo/NITools/NITools
+nixs@nixs-iMac NITools % tree
+.
+├── Assets
+└── Classes
+    ├── NICategory(UIView 扩展分类-注意和Masnory一起引入工程时候，不要用Masnory宏定义)
+    │   ├── UIView+NIFrame.h
+    │   └── UIView+NIFrame.m
+    └── NIView(自定义View)
+        ├── NIPrivacyView.h(app启动隐私说明)
+        ├── NIPrivacyView.m
+        ├── NIVersionManagerView.h(版本更新描述)
+        └── NIVersionManagerView.m
+
+4 directories, 6 files
+nixs@nixs-iMac NITools %
+```
+
 ## Requirements
+
+- iOS 8.0 or later
 
 ## Installation
 
@@ -35,3 +57,5 @@ NITools
 [1.如何搭建自己的CocoaPods三方库，并且在库中依赖其他三方库](https://www.jianshu.com/p/0e55143901b4)
 
 [2.git pull 问题:fatal: refusing to merge unrelated histories解决](https://blog.csdn.net/qq_39400546/article/details/100150320)
+
+[3.CocoaPods 操作过程中出现的错误](https://www.jianshu.com/p/9a5ec24ff437)
