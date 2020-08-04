@@ -18,12 +18,6 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "NITools/Classes/**/*",
-  "resource_bundles": {
-    "NITools": [
-      "NITools/Assets/*.png"
-    ]
-  },
   "public_header_files": "Pod/Classes/**/*.h",
   "frameworks": [
     "UIKit",
@@ -46,5 +40,23 @@
     "YYText": [
 
     ]
-  }
+  },
+  "subspecs": [
+    {
+      "name": "NICategory",
+      "source_files": "NITools/Classes/NICategory/*.{h,m}"
+    },
+    {
+      "name": "NIView",
+      "source_files": "NITools/Classes/NIView/*.{h,m}",
+      "dependencies": {
+        "Masonry": [
+
+        ],
+        "YYText": [
+
+        ]
+      }
+    }
+  ]
 }
