@@ -1,0 +1,16 @@
+PODS:
+  - NITools (0.1.0)
+
+DEPENDENCIES:
+  - NITools (from `../`)
+
+EXTERNAL SOURCES:
+  NITools:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  NITools: 336e332dfd483cfdff921726dc525ff6deaf5240
+
+PODFILE CHECKSUM: 67ade3768d7ee6cb165178f063fb40fca5e9bcfd
+
+COCOAPODS: 1.9.2

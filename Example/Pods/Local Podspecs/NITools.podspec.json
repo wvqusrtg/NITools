@@ -1,0 +1,22 @@
+{
+  "name": "NITools",
+  "version": "0.1.0",
+  "summary": "A short description of NITools.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/nixinsheng/NITools",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "nixinsheng": "1911398892@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/nixinsheng/NITools.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "NITools/Classes/**/*"
+}

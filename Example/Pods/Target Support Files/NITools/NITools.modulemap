@@ -1,0 +1,6 @@
+framework module NITools {
+  umbrella header "NITools-umbrella.h"
+
+  export *
+  module * { export * }
+}
