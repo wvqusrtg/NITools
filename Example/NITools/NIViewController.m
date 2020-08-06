@@ -51,7 +51,7 @@
          [self.view showHUDMessage:@"btnExitBlock"];
      };
      */
-  NIPrivacyView* priView = [[NIPrivacyView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
+     NIPrivacyView* priView = [[NIPrivacyView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
      [self.view addSubview:priView];
      priView.btnOKBlock = ^{
          [self.view showHUDMessage:@"btnOKBlock"];

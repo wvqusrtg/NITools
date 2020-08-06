@@ -34,6 +34,9 @@ nixs@nixs-iMac NITools % tree
 nixs@nixs-iMac NITools %
 ```
 
+## 使用示例
+ - 参见./Example/NITools/NIViewController.m
+
 ## 版本更新内容
  - tag:0.1.2 - NITools：优化NIPrivacyView.h/m(开放尽可能多的属性-方便使用者精细定制化)-「个人实践：pod lib编译验证不过、pod trunk push上传异常、 trunk push 到 CocoaPods 成功后 pod search 却搜不到的解决方法」
  - tag:0.1.0 - NITools：自定义view分类(UIView+NIFrame.h/m)、启动隐私政策自定义view组件(NIPrivacyView.h/m)、版本更新自定义view组件(NIVersionManagerView.h/m)
@@ -55,18 +58,11 @@ pod 'NITools', '~> 0.1.2'
 
 nixinsheng, 1911398892@qq.com
 
+有问题微信联系-本人微信号:wvqusrtg
+
 ## License
 
 NITools is available under the MIT license. See the LICENSE file for more info.
 
 NITools
 
-
-## Tips by myself
-[1.如何搭建自己的CocoaPods三方库，并且在库中依赖其他三方库](https://www.jianshu.com/p/0e55143901b4)
-
-[2.git pull 问题:fatal: refusing to merge unrelated histories解决](https://blog.csdn.net/qq_39400546/article/details/100150320)
-
-[3.CocoaPods 操作过程中出现的错误](https://www.jianshu.com/p/9a5ec24ff437)
-
-[4.个人实践：pod lib编译验证不过、pod trunk push上传异常、 trunk push 到 CocoaPods 成功后 pod search 却搜不到的解决方法](http://note.youdao.com/s/OIVFFKE)
