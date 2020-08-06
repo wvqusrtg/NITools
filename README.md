@@ -48,7 +48,7 @@ NITools is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'NITools'
+pod 'NITools', '~> 0.1.2'
 ```
 
 ## Author
@@ -68,3 +68,5 @@ NITools
 [2.git pull 问题:fatal: refusing to merge unrelated histories解决](https://blog.csdn.net/qq_39400546/article/details/100150320)
 
 [3.CocoaPods 操作过程中出现的错误](https://www.jianshu.com/p/9a5ec24ff437)
+
+[4.个人实践：pod lib编译验证不过、pod trunk push上传异常、 trunk push 到 CocoaPods 成功后 pod search 却搜不到的解决方法](http://note.youdao.com/s/OIVFFKE)
