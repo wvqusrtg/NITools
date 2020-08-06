@@ -6,7 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "YYText.h"
+#import <YYText.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

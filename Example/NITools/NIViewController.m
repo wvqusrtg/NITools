@@ -7,9 +7,9 @@
 //
 
 #import "NIViewController.h"
-#import <NITools/NIPrivacyView.h>
-#import <NITools/NIVersionManagerView.h>
-#import <NITools/UIView+NIFrame.h>
+#import "NITools/NIPrivacyView.h"
+#import "NITools/NIVersionManagerView.h"
+#import "NITools/UIView+NIFrame.h"
 #import "MBProgressHUD+Add/UIView+MBPHUD.h"
 // 屏幕
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width     //屏幕宽度
