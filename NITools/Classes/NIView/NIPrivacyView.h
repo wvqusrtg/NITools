@@ -6,6 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YYText.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong)UIView* lineView;//分割线
 @property(nonatomic,strong)NSString* title;//标题
 @property(nonatomic,strong)NSString* desc;//描述信息(具体内容)
-
+@property (nonatomic , strong)   YYLabel *labDesc;
 @property(nonatomic,strong)UIButton* btnExit;
 @property(nonatomic,strong)UIButton* btnOK;
 @property (nonatomic,copy) void(^btnExitBlock)(void);
