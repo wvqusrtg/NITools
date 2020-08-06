@@ -10,6 +10,10 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+## 效果
+![版本更新](./Res/demo.gif)
+![隐私政策](./Res/demo2.gif)
+
 ## 目录结构
 ```
 /Users/nixs/Documents/iOSDemo/NITools/NITools
@@ -29,9 +33,10 @@ nixs@nixs-iMac NITools % tree
 4 directories, 6 files
 nixs@nixs-iMac NITools %
 ```
-## 效果
-![版本更新](./Res/demo.gif)
-![隐私政策](./Res/demo2.gif)
+
+## 版本更新内容
+ - tag:0.1.1 - NITools：优化NIPrivacyView.h/m(开放尽可能多的属性-方便使用者精细定制化)
+ - tag:0.1.0 - NITools：自定义view分类(UIView+NIFrame.h/m)、启动隐私政策自定义view组件(NIPrivacyView.h/m)、版本更新自定义view组件(NIVersionManagerView.h/m)
 
 ## Requirements
 
@@ -55,10 +60,6 @@ nixinsheng, 1911398892@qq.com
 NITools is available under the MIT license. See the LICENSE file for more info.
 
 NITools
-
-## 版本更新内容
- - tag:0.1.1 - NITools：优化NIPrivacyView.h/m(开放尽可能多的属性-方便使用者精细定制化)
- - tag:0.1.0 - NITools：自定义view分类(UIView+NIFrame.h/m)、启动隐私政策自定义view组件(NIPrivacyView.h/m)、版本更新自定义view组件(NIVersionManagerView.h/m)
 
 
 ## Tips by myself
