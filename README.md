@@ -58,7 +58,7 @@ pod 'NITools', '~> 0.1.2'
 
 nixinsheng, 1911398892@qq.com
 
-有问题微信联系-本人微信号:wvqusrtg
+有问题微信联系包教会「注明来意」-本人微信号:wvqusrtg
 
 ## License
 
