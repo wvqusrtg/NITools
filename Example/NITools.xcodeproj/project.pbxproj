@@ -22,6 +22,12 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		8CFB219C24DB91BD006C078E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CFB219A24DB91BD006C078E /* BaseViewController.m */; };
+		8CFB21A224DB9310006C078E /* UIViewController+MBPHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CFB21A024DB9310006C078E /* UIViewController+MBPHUD.m */; };
+		8CFB21A324DB9310006C078E /* UIView+MBPHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CFB21A124DB9310006C078E /* UIView+MBPHUD.m */; };
+		8CFB21A924DB934D006C078E /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CFB21A524DB934D006C078E /* MBProgressHUD.m */; };
+		8CFB21AA24DB934D006C078E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 8CFB21A624DB934D006C078E /* LICENSE */; };
+		8CFB21AB24DB934D006C078E /* README.mdown in Resources */ = {isa = PBXBuildFile; fileRef = 8CFB21A824DB934D006C078E /* README.mdown */; };
 		B62D88A187FA4894E3BC4BF3 /* libPods-NITools_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC1DE280342362CC53BBD81A /* libPods-NITools_Tests.a */; };
 		EADE8D35B59876EB355ECEA4 /* libPods-NITools_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F31BB9D1535B9222E695678 /* libPods-NITools_Example.a */; };
 /* End PBXBuildFile section */
@@ -61,6 +67,16 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8CFB219A24DB91BD006C078E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		8CFB219B24DB91BD006C078E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		8CFB219E24DB9310006C078E /* UIViewController+MBPHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MBPHUD.h"; sourceTree = "<group>"; };
+		8CFB219F24DB9310006C078E /* UIView+MBPHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MBPHUD.h"; sourceTree = "<group>"; };
+		8CFB21A024DB9310006C078E /* UIViewController+MBPHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MBPHUD.m"; sourceTree = "<group>"; };
+		8CFB21A124DB9310006C078E /* UIView+MBPHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MBPHUD.m"; sourceTree = "<group>"; };
+		8CFB21A524DB934D006C078E /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		8CFB21A624DB934D006C078E /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		8CFB21A724DB934D006C078E /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		8CFB21A824DB934D006C078E /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.mdown; sourceTree = "<group>"; };
 		936A96DAC002D6EDD535CEDE /* Pods-NITools_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NITools_Tests.debug.xcconfig"; path = "Target Support Files/Pods-NITools_Tests/Pods-NITools_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C6F2802B79C926F31CB8BF41 /* NITools.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NITools.podspec; path = ../NITools.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D89CA4C71983E8F7B3EB6B2F /* Pods-NITools_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NITools_Tests.release.xcconfig"; path = "Target Support Files/Pods-NITools_Tests/Pods-NITools_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +148,9 @@
 		6003F593195388D20070C39A /* Example for NITools */ = {
 			isa = PBXGroup;
 			children = (
+				8CFB21A424DB934D006C078E /* MBProgressHUD */,
+				8CFB219D24DB9310006C078E /* MBProgressHUD+Add */,
+				8CFB219924DB91BD006C078E /* Base */,
 				6003F59C195388D20070C39A /* NIAppDelegate.h */,
 				6003F59D195388D20070C39A /* NIAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -183,6 +202,37 @@
 				36CB78F9CEAF6C681266E960 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		8CFB219924DB91BD006C078E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8CFB219A24DB91BD006C078E /* BaseViewController.m */,
+				8CFB219B24DB91BD006C078E /* BaseViewController.h */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		8CFB219D24DB9310006C078E /* MBProgressHUD+Add */ = {
+			isa = PBXGroup;
+			children = (
+				8CFB219E24DB9310006C078E /* UIViewController+MBPHUD.h */,
+				8CFB219F24DB9310006C078E /* UIView+MBPHUD.h */,
+				8CFB21A024DB9310006C078E /* UIViewController+MBPHUD.m */,
+				8CFB21A124DB9310006C078E /* UIView+MBPHUD.m */,
+			);
+			path = "MBProgressHUD+Add";
+			sourceTree = "<group>";
+		};
+		8CFB21A424DB934D006C078E /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				8CFB21A524DB934D006C078E /* MBProgressHUD.m */,
+				8CFB21A624DB934D006C078E /* LICENSE */,
+				8CFB21A724DB934D006C078E /* MBProgressHUD.h */,
+				8CFB21A824DB934D006C078E /* README.mdown */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 		9C8DFC5368498D3F4CEC1024 /* Pods */ = {
@@ -283,7 +333,9 @@
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				8CFB21AB24DB934D006C078E /* README.mdown in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				8CFB21AA24DB934D006C078E /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,8 +402,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* NIAppDelegate.m in Sources */,
+				8CFB219C24DB91BD006C078E /* BaseViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* NIViewController.m in Sources */,
+				8CFB21A224DB9310006C078E /* UIViewController+MBPHUD.m in Sources */,
+				8CFB21A324DB9310006C078E /* UIView+MBPHUD.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				8CFB21A924DB934D006C078E /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

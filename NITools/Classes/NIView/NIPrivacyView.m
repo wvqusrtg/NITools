@@ -8,7 +8,6 @@
 #import "NIPrivacyView.h"
 // 测试直接引入三方依赖Masnory
 #import "Masonry.h"
-#import "YYText.h"
 // 屏幕
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width     //屏幕宽度
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height   //屏幕高度
@@ -20,18 +19,6 @@
 #define STRONGSELF __weak typeof(weakSelf) strongSelf = weakSelf
 
 @interface NIPrivacyView()
-@property(nonatomic,strong)UIView* bgView;
-@property(nonatomic,strong)UILabel* labTitle;
-@property(nonatomic,strong)UIView* lineView;//分割线
-@property (nonatomic , strong)   YYLabel *labDesc;
-@property(nonatomic,strong)NSString* title;//标题
-@property(nonatomic,strong)NSString* desc;//描述信息(具体内容)
-
-@property(nonatomic,strong)UIButton* btnExit;
-@property(nonatomic,strong)UIButton* btnOK;
-@property (nonatomic,copy) void(^btnExitBlock)(void);
-@property (nonatomic,copy) void(^btnOKBlock)(void);
-@property (nonatomic,copy) void(^privacyBlock)(void);
 
 @end
 
