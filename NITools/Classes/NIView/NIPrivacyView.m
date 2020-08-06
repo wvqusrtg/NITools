@@ -8,6 +8,7 @@
 #import "NIPrivacyView.h"
 // 测试直接引入三方依赖Masnory
 #import "Masonry.h"
+#import "YYText.h"
 // 屏幕
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width     //屏幕宽度
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height   //屏幕高度
@@ -19,6 +20,7 @@
 #define STRONGSELF __weak typeof(weakSelf) strongSelf = weakSelf
 
 @interface NIPrivacyView()
+@property (nonatomic , strong)   YYLabel *labDesc;
 
 @end
 
