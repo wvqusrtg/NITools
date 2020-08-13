@@ -17,20 +17,25 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## 目录结构
 ```
 /Users/nixs/Documents/iOSDemo/NITools/NITools
-nixs@nixs-iMac NITools % tree
+nixs@nixs-iMac NITools % tree -N
 .
 ├── Assets
 └── Classes
-    ├── NICategory(UIView 扩展分类-注意和Masnory一起引入工程时候，不要用Masnory宏定义)
-    │   ├── UIView+NIFrame.h
+    ├── NICategory
+    │   ├── NSString+VersionCompare.h - app版本比较分类
+    │   ├── NSString+VersionCompare.m
+    │   ├── UIView+NIFrame.h - UIView 扩展分类-注意和Masnory一起引入工程时候，不要用Masnory宏定义
     │   └── UIView+NIFrame.m
-    └── NIView(自定义View)
-        ├── NIPrivacyView.h(app启动隐私说明)
+    ├── NIIPTool
+    │   ├── NIIPTools.h - 获取ip地址工具类,支持获取ipv6地址
+    │   └── NIIPTools.m
+    └── NIView
+        ├── NIPrivacyView.h - app启动隐私说明「自定义view」
         ├── NIPrivacyView.m
-        ├── NIVersionManagerView.h(版本更新描述)
+        ├── NIVersionManagerView.h - 版本更新描述「自定义view」
         └── NIVersionManagerView.m
 
-4 directories, 6 files
+5 directories, 10 files
 nixs@nixs-iMac NITools %
 ```
 
