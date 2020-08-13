@@ -10,10 +10,15 @@
 #import "NITools/NIPrivacyView.h"
 #import "NITools/NIVersionManagerView.h"
 #import "NITools/UIView+NIFrame.h"
+#import "NITools/NSString+VersionCompare.h"
+#import "NITools/NIIPTools.h"
 #import "MBProgressHUD+Add/UIView+MBPHUD.h"
+
 // 屏幕
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width     //屏幕宽度
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height   //屏幕高度
+
+
 
 @interface NIViewController ()
 @property(nonatomic,strong) UIButton *btnNext;
@@ -26,7 +31,26 @@
 {
     [super viewDidLoad];
     [self.view addSubview:self.btnNext];
+    [self versionCompar];
+    [self getIpAddress];
 }
+
+/// 获取ip地址-支持获取ipv6地址
+-(void)getIpAddress{
+    NSLog(@"---ipAddress:%@",[NIIPTools NIGetIPAddress]);
+}
+/// 比较两个版本号的大小（2.0）
+/// @param v1 v1 第一个版本号
+/// @param v2 v2 第二个版本号
+/// @return 版本号相等,返回0; v1小于v2,返回-1; 否则返回1.
+/// by:nixs 2020年08月13日19:04:40
+-(void)versionCompar{
+    //NSInteger resultCompare = [NSString compareVersion:@"0.1.0" to:@"0.1"];
+    //NSInteger resultCompare = [NSString compareVersion:@"0.1.0" to:@"0.1.1"];
+    NSInteger resultCompare = [NSString NICompareVersion:@"0.1.0" to:@"0.0.1"];
+    NSLog(@"---resultCompare:%ld",resultCompare);
+}
+
 /// 页面跳转 没有用UINavigationController
 -(void)nextPage{
     [self.view showHUDMessage:@"加载中..."];
@@ -62,9 +86,6 @@
      priView.privacyBlock = ^{
        [self.view showHUDMessage:@"隐私详情"];
      };
-    /**
-     
-     */
 }
 
 /// 懒加载

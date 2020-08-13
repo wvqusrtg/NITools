@@ -21,17 +21,22 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - Masonry (1.1.0)
-  - NITools (0.1.0):
+  - NITools (0.1.3):
     - AFNetworking (~> 2.3)
     - Masonry
-    - NITools/NICategory (= 0.1.0)
-    - NITools/NIView (= 0.1.0)
+    - NITools/NICategory (= 0.1.3)
+    - NITools/NIIPTool (= 0.1.3)
+    - NITools/NIView (= 0.1.3)
     - YYText
-  - NITools/NICategory (0.1.0):
+  - NITools/NICategory (0.1.3):
     - AFNetworking (~> 2.3)
     - Masonry
     - YYText
-  - NITools/NIView (0.1.0):
+  - NITools/NIIPTool (0.1.3):
+    - AFNetworking (~> 2.3)
+    - Masonry
+    - YYText
+  - NITools/NIView (0.1.3):
     - AFNetworking (~> 2.3)
     - Masonry
     - YYText
@@ -53,7 +58,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: 8dd5f9b9691e09186393069a12cc3b5ed7c8b511
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  NITools: 40c15fe6c930ddc3ffadd9d76d211966e87d6d5a
+  NITools: 8ca060c723b0dd412d8fde3ce471c9dbf3d193e8
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
 PODFILE CHECKSUM: 930df48b72abf60bcd11071e85a550c61b675814

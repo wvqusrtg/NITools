@@ -8,12 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NITools'
-  s.version          = '0.1.2'
-  s.summary          = '个人工具类集合整理:尝试组件开发
-  「001-优化NIPrivacyView.h/m(开放尽可能多的属性-方便使用者精细定制化)-tag:0.1.1」
-  「002-Allow Non-modular includes in Framework Mo 「修复」」
-  「003-组件的色系要能统一修改、组件属性尽量多开放、属性能精细修改、（NITools待更新）-tag:0.1.3」
-  '
+  s.version          = '0.1.3'
+  s.summary          = '个人工具类集合整理:尝试组件开发-新增NSString分类(NSString+VersionCompare.h/m)-app发布版本号比较;新增获取ip地址工具类-支持获取ipv6地址'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = '优化NIPrivacyView.h/m(开放尽可能多的属性-方便使用者精细定制化)'
+  s.description      = '新增NSString分类-app版本比较'
   
   s.homepage         = 'https://github.com/wvqusrtg/NITools'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -38,11 +34,16 @@ Pod::Spec.new do |s|
       ss.source_files = 'NITools/Classes/NICategory/*.{h,m}'
   end
   
+  s.subspec 'NIIPTool' do |ss|
+      ss.source_files = 'NITools/Classes/NIIPTool/*.{h,m}'
+  end
+  
   s.subspec 'NIView' do |ss|
       ss.source_files = 'NITools/Classes/NIView/*.{h,m}'
       ss.dependency 'Masonry'
       ss.dependency 'YYText'
   end
+    
   
   # 这里存放的是资源文件
   # s.resource_bundles = {

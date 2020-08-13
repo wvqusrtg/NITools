@@ -38,7 +38,11 @@ nixs@nixs-iMac NITools %
  - 参见./Example/NITools/NIViewController.m
 
 ## 版本更新内容
- - tag:0.1.2 - NITools：优化NIPrivacyView.h/m(开放尽可能多的属性-方便使用者精细定制化)-「个人实践：pod lib编译验证不过、pod trunk push上传异常、 trunk push 到 CocoaPods 成功后 pod search 却搜不到的解决方法」
+ - 计划更新：组件的色系要能统一修改、组件属性尽量多开放、属性能精细修改、（NITools待更新）
+ - tag:0.1.3 - NITools：新增NSString分类(NSString+VersionCompare.h/m)-app发布版本号比较;新增获取ip地址工具类-支持获取ipv6地址
+ - tag:0.1.2 - NITools：优化NIPrivacyView.h/m(开放尽可能多的属性-方便使用者精细定制化)-「个人实践：pod lib编译验证不过、pod trunk push上传异常、 trunk push 到 CocoaPods 成功后 pod search 却搜不到的解决方法」;Allow Non-modular includes in Framework Mo 「修复」;
+    <p style="color:red">-需要详细资料小伙伴联系我微信:wvqusrtg</p>
+
  - tag:0.1.0 - NITools：自定义view分类(UIView+NIFrame.h/m)、启动隐私政策自定义view组件(NIPrivacyView.h/m)、版本更新自定义view组件(NIVersionManagerView.h/m)
 
 ## Requirements
@@ -51,12 +55,12 @@ NITools is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'NITools', '~> 0.1.2'
+pod 'NITools', '~> 0.1.3'
 ```
 
 ## Author
 
-nixinsheng, 1911398892@qq.com
+<p style="color:red">nixinsheng, 1911398892@qq.com</p>
 
 有问题微信联系包教会「注明来意」-本人微信号:wvqusrtg
 
