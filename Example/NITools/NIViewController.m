@@ -15,11 +15,13 @@
 #import "MBProgressHUD+Add/UIView+MBPHUD.h"
 #import "NITools/NIMacro.h"
 #import "NITools/UIColor+NIColor.h"
+#import "NITools/NINetworkDetectionView.h"
 
 @interface NIViewController ()
 @property(nonatomic,strong) UIButton *btnNext;
 @property(nonatomic,strong) UIView *view015;
 @property(nonatomic,strong) UIView *view015_2;
+@property(nonatomic,strong) NINetworkDetectionView *networkDetectionView;
 
 @end
 
@@ -33,7 +35,30 @@
     [self getIpAddress];
     [self printMacro];
     [self tag015_eg];
+    [self showNINetworkDetectionView];
 }
+-(void)showNINetworkDetectionView{
+    [self.view addSubview:self.networkDetectionView];
+    /**
+     //*自定义网络异常视图放到每个控制器视图-最上层
+     UIWindow* mainWindow = [self lastWindow];
+     [mainWindow addSubview:self.networkDetectionView];
+     //self.networkDetectionView.hidden = YES;
+     */
+}
+
+/**
+ iOS 应用获取最上层全屏 Window 的正确方法
+ */
+- (UIWindow *)lastWindow{
+    NSArray *windows = [UIApplication sharedApplication].windows;
+    for(UIWindow *window in [windows reverseObjectEnumerator]) {
+        if ([window isKindOfClass:[UIWindow class]] && CGRectEqualToRect(window.bounds, [UIScreen mainScreen].bounds))
+            return window;
+    }
+    return [UIApplication sharedApplication].keyWindow;
+}
+
 -(void)tag015_eg{
     [self.view addSubview:self.view015];
     [self.view addSubview:self.view015_2];
@@ -134,5 +159,11 @@
         [_view015_2 round:50.0 RectCorners:UIRectCornerTopLeft|UIRectCornerBottomRight|UIRectCornerTopRight];
     }
     return _view015_2;
+}
+-(NINetworkDetectionView *)networkDetectionView{
+    if (!_networkDetectionView) {
+        _networkDetectionView = [[NINetworkDetectionView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
+    }
+    return _networkDetectionView;
 }
 @end

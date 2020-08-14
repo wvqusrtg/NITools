@@ -50,6 +50,7 @@ nixs@nixs-iMac Classes %
 
 ## 版本更新内容
  - 计划更新：组件的色系要能统一修改、组件属性尽量多开放、属性能精细修改、（NITools待更新）
+ - tag:0.1.7 - NITools：自定义View(NINetworkDetectionView.h/m)使用资源文件
  - tag:0.1.6 - NITools：优化NITools.podspec 去除s.dependency 'AFNetworking'强制要求的版本
  - tag:0.1.5 - NITools：优化UIView+NIFrame.h/m-支持设置圆角、设置边框、设置圆角&边框、给指定哪几个角设置圆角、设置阴影；新增：UIColor+NIColor.h/m适配暗黑模式颜色
  - tag:0.1.4 - NITools：常用宏整理NIMacro/Macro.h(注:你可以拷贝出来放到你工程的PCH里,也可以PCH里直接引用该头文件)
@@ -69,7 +70,7 @@ NITools is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'NITools', '~> 0.1.6'
+pod 'NITools', '~> 0.1.7'
 ```
 
 ## Author

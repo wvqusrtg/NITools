@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'NITools'
   s.version          = '0.1.6'
-  s.summary          = '个人工具类集合整理:尝试组件开发- tag:0.1.6 - NITools：优化NITools.podspec 去除s.dependency '"AFNetworking"'强制要求的版本'
+  s.summary          = '个人工具类集合整理:尝试组件开发 - tag:0.1.7 - NITools：自定义View(NINetworkDetectionView.h/m)使用资源文件'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = '- tag:0.1.6 - NITools：优化NITools.podspec 去除s.dependency '"AFNetworking"'强制要求的版本'
+  s.description      = ' - tag:0.1.7 - NITools：自定义View(NINetworkDetectionView.h/m)使用资源文件'
   
   s.homepage         = 'https://github.com/wvqusrtg/NITools'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -46,13 +46,14 @@ Pod::Spec.new do |s|
       ss.source_files = 'NITools/Classes/NIView/*.{h,m}'
       ss.dependency 'Masonry'
       ss.dependency 'YYText'
+      ss.dependency 'NITools/NIMacro'
   end
     
   
   # 这里存放的是资源文件
-  # s.resource_bundles = {
-  #   'NITools' => ['NITools/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'NITools' => ['NITools/Assets/*.png']
+   }
   # 这里推荐这么写，将该目录下的.h文件暴露出来
   s.public_header_files = 'Pod/Classes/**/*.h'
   # 以下，如果不需要可以不写

@@ -18,6 +18,11 @@
   "platforms": {
     "ios": "8.0"
   },
+  "resource_bundles": {
+    "NITools": [
+      "NITools/Assets/*.png"
+    ]
+  },
   "public_header_files": "Pod/Classes/**/*.h",
   "frameworks": [
     "UIKit",
@@ -62,6 +67,9 @@
 
         ],
         "YYText": [
+
+        ],
+        "NITools/NIMacro": [
 
         ]
       }
