@@ -14,9 +14,12 @@
 #import "NITools/NIIPTools.h"
 #import "MBProgressHUD+Add/UIView+MBPHUD.h"
 #import "NITools/NIMacro.h"
+#import "NITools/UIColor+NIColor.h"
 
 @interface NIViewController ()
 @property(nonatomic,strong) UIButton *btnNext;
+@property(nonatomic,strong) UIView *view015;
+@property(nonatomic,strong) UIView *view015_2;
 
 @end
 
@@ -29,7 +32,13 @@
     [self versionCompar];
     [self getIpAddress];
     [self printMacro];
+    [self tag015_eg];
 }
+-(void)tag015_eg{
+    [self.view addSubview:self.view015];
+    [self.view addSubview:self.view015_2];
+}
+
 -(void)printMacro{
     DLog(@"nixs");
     DLog(@"---kScreenHeight:%lf",kScreenHeight);
@@ -104,5 +113,26 @@
         [_btnNext addTarget:self action:@selector(nextPage) forControlEvents:UIControlEventTouchUpInside];
     }
     return _btnNext;
+}
+-(UIView *)view015{
+    if (!_view015) {
+        _view015 = [[UIView alloc] initWithFrame:CGRectMake(10, self.btnNext.bottom+10, kScreenWidth/3, 100)];
+        //非暗黑-红色、暗黑-蓝色
+        [_view015 setBackgroundColor:[UIColor colorWithLightColor:[UIColor redColor] DarkColor:[UIColor blueColor]]];
+        
+        //阴影 offset 右10、下10 - 注:暗黑模式变换有异常
+        [_view015 shadow:[UIColor colorWithLightColor:[UIColor greenColor] DarkColor:[UIColor purpleColor]] opacity:0.9 radius:5.0 offset:CGSizeMake(10, 10)];
+    }
+    return _view015;
+}
+-(UIView *)view015_2{
+    if (!_view015_2) {
+        _view015_2 = [[UIView alloc] initWithFrame:CGRectMake(kScreenWidth-kScreenWidth/3-10, self.btnNext.bottom+10, 100, 100)];
+        //非暗黑-红色、暗黑-蓝色
+        [_view015_2 setBackgroundColor:[UIColor colorWithLightColor:[UIColor redColor] DarkColor:[UIColor blueColor]]];
+        //[_view015 round:50.0 RectCorners:UIRectCornerBottomRight];
+        [_view015_2 round:50.0 RectCorners:UIRectCornerTopLeft|UIRectCornerBottomRight|UIRectCornerTopRight];
+    }
+    return _view015_2;
 }
 @end

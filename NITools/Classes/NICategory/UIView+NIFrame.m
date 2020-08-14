@@ -8,21 +8,17 @@
 #import "UIView+NIFrame.h"
 
 @implementation UIView (NIFrame)
-#pragma mark - get方法
-- (CGPoint)origin {
-    return self.frame.origin;
+#pragma mark - frame
+- (void)setX:(CGFloat)x {
+    CGRect frame = self.frame;
+    frame.origin.x = x;
+    self.frame = frame;
 }
 
-- (CGSize)size {
-    return self.frame.size;
-}
-
-- (CGFloat)width {
-    return self.frame.size.width;
-}
-
-- (CGFloat)height {
-    return self.frame.size.height;
+- (void)setY:(CGFloat)y {
+    CGRect frame = self.frame;
+    frame.origin.y = y;
+    self.frame = frame;
 }
 
 - (CGFloat)x {
@@ -33,28 +29,46 @@
     return self.frame.origin.y;
 }
 
-- (CGFloat)maxX {
-    return CGRectGetMaxX(self.frame);
-}
-
-- (CGFloat)maxY {
-    return CGRectGetMaxY(self.frame);
+- (void)setCenterX:(CGFloat)centerX {
+    
+    CGPoint center = self.center;
+    center.x = centerX;
+    self.center = center;
+    
 }
 
 - (CGFloat)centerX {
     return self.center.x;
 }
 
+- (void)setCenterY:(CGFloat)centerY{
+    CGPoint center = self.center;
+    center.y = centerY;
+    self.center = center;
+}
+
 - (CGFloat)centerY {
     return self.center.y;
 }
 
-
-#pragma mark - set方法
-- (void)setOrigin:(CGPoint)origin {
+- (void)setWidth:(CGFloat)width {
     CGRect frame = self.frame;
-    frame.origin = origin;
+    frame.size.width = width;
     self.frame = frame;
+}
+
+- (void)setHeight:(CGFloat)height {
+    CGRect frame = self.frame;
+    frame.size.height = height;
+    self.frame = frame;
+}
+
+- (CGFloat)height {
+    return self.frame.size.height;
+}
+
+- (CGFloat)width {
+    return self.frame.size.width;
 }
 
 - (void)setSize:(CGSize)size {
@@ -63,44 +77,120 @@
     self.frame = frame;
 }
 
-- (void)setWidth:(CGFloat)width {
-    self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, width, self.frame.size.height);
+- (CGSize)size {
+    return self.frame.size;
 }
 
-- (void)setHeight:(CGFloat)height {
-    self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width, height);
+- (void)setOrigin:(CGPoint)origin {
+    CGRect frame = self.frame;
+    frame.origin = origin;
+    self.frame = frame;
 }
 
-- (void)setX:(CGFloat)x {
-    self.frame = CGRectMake(x, self.frame.origin.y, self.frame.size.width, self.frame.size.height);
+- (CGPoint)origin {
+    return self.frame.origin;
+}
+- (CGFloat)top {
+    return self.frame.origin.y;
 }
 
-- (void)setY:(CGFloat)y {
-    self.frame = CGRectMake(self.frame.origin.x, y, self.frame.size.width, self.frame.size.height);
+- (void)setTop:(CGFloat)top {
+    CGRect frame = self.frame;
+    frame.origin.y = top;
+    self.frame = frame;
 }
 
-- (void)setMaxX:(CGFloat)maxX {
-    // 1.必须通过结构体赋值.直接赋值,涉及到计算时会出错.
-    // 2.必须将x,y,当做已知条件;宽,高当做未知条件.涉及到计算时,才能正确计算出在父控件中的位置.
-    // ❌错误方法 frame.origin.x = maxX - frame.size.width;
-    // 错误原因:可能此时的宽度还没有值,所以计算出来的值是错误的.
-    self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, maxX - self.frame.origin.x, self.frame.size.height);
+- (CGFloat)left {
+    return self.frame.origin.x;
 }
 
-- (void)setMaxY:(CGFloat)maxY {
-    self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width, maxY - self.frame.origin.y);
+- (void)setLeft:(CGFloat)left {
+    CGRect frame = self.frame;
+    frame.origin.x = left;
+    self.frame = frame;
 }
 
-- (void)setCenterX:(CGFloat)centerX {
-    CGPoint center = self.center;
-    center.x = centerX;
-    self.center = center;
+
+- (CGFloat)bottom {
+    return self.frame.size.height + self.frame.origin.y;
 }
 
-- (void)setCenterY:(CGFloat)centerY {
-    CGPoint center = self.center;
-    center.y = centerY;
-    self.center = center;
+- (void)setBottom:(CGFloat)bottom {
+    CGRect frame = self.frame;
+    frame.origin.y = bottom - frame.size.height;
+    self.frame = frame;
+}
+
+- (CGFloat)right {
+    return self.frame.size.width + self.frame.origin.x;
+}
+
+- (void)setRight:(CGFloat)right {
+    CGRect frame = self.frame;
+    frame.origin.x = right - frame.size.width;
+    self.frame = frame;
+}
+
+#pragma mark - layer
+- (void)rounded:(CGFloat)cornerRadius {
+    [self rounded:cornerRadius width:0 color:nil];
+}
+
+- (void)border:(CGFloat)borderWidth color:(UIColor *)borderColor {
+    [self rounded:0 width:borderWidth color:borderColor];
+}
+
+- (void)rounded:(CGFloat)cornerRadius width:(CGFloat)borderWidth color:(UIColor *)borderColor {
+    self.layer.cornerRadius = cornerRadius;
+    self.layer.borderWidth = borderWidth;
+    self.layer.borderColor = [borderColor CGColor];
+    self.layer.masksToBounds = YES;
+}
+
+
+-(void)round:(CGFloat)cornerRadius RectCorners:(UIRectCorner)rectCorner {
+    
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:rectCorner cornerRadii:CGSizeMake(cornerRadius, cornerRadius)];
+    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+    maskLayer.frame = self.bounds;
+    maskLayer.path = maskPath.CGPath;
+    self.layer.mask = maskLayer;
+}
+
+
+-(void)shadow:(UIColor *)shadowColor opacity:(CGFloat)opacity radius:(CGFloat)radius offset:(CGSize)offset {
+    //给Cell设置阴影效果
+    self.layer.masksToBounds = NO;
+    self.layer.shadowColor = shadowColor.CGColor;
+    self.layer.shadowOpacity = opacity;
+    self.layer.shadowRadius = radius;
+    self.layer.shadowOffset = offset;
+}
+
+
+#pragma mark - base
+- (UIViewController *)viewController {
+    
+    id nextResponder = [self nextResponder];
+    while (nextResponder != nil) {
+        if ([nextResponder isKindOfClass:[UIViewController class]]) {
+            UIViewController *vc = (UIViewController *)nextResponder;
+            return vc;
+        }
+        nextResponder = [nextResponder nextResponder];
+    }
+    return nil;
+}
+
++ (CGFloat)getLabelHeightByWidth:(CGFloat)width Title:(NSString *)title font:(UIFont *)font {
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, width, 0)];
+    label.text = title;
+    label.font = font;
+    label.numberOfLines = 0;
+    [label sizeToFit];
+    CGFloat height = label.frame.size.height;
+    return height;
 }
 
 #pragma mark - 私有方法 一般不会用到
