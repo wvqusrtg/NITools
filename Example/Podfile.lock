@@ -26,6 +26,7 @@ PODS:
     - Masonry
     - NITools/NICategory (= 0.1.3)
     - NITools/NIIPTool (= 0.1.3)
+    - NITools/NIMacro (= 0.1.3)
     - NITools/NIView (= 0.1.3)
     - YYText
   - NITools/NICategory (0.1.3):
@@ -33,6 +34,10 @@ PODS:
     - Masonry
     - YYText
   - NITools/NIIPTool (0.1.3):
+    - AFNetworking (~> 2.3)
+    - Masonry
+    - YYText
+  - NITools/NIMacro (0.1.3):
     - AFNetworking (~> 2.3)
     - Masonry
     - YYText
@@ -58,7 +63,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: 8dd5f9b9691e09186393069a12cc3b5ed7c8b511
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  NITools: 9466fc5e8e16aad777534f2d6fe3e24bb30de443
+  NITools: 04f755762eade17dea50428730000995ee6a6734
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
 PODFILE CHECKSUM: 930df48b72abf60bcd11071e85a550c61b675814

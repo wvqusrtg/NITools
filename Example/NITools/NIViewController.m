@@ -13,12 +13,7 @@
 #import "NITools/NSString+VersionCompare.h"
 #import "NITools/NIIPTools.h"
 #import "MBProgressHUD+Add/UIView+MBPHUD.h"
-
-// 屏幕
-#define kScreenWidth [UIScreen mainScreen].bounds.size.width     //屏幕宽度
-#define kScreenHeight [UIScreen mainScreen].bounds.size.height   //屏幕高度
-
-
+#import "NITools/Macro.h"
 
 @interface NIViewController ()
 @property(nonatomic,strong) UIButton *btnNext;
@@ -33,9 +28,20 @@
     [self.view addSubview:self.btnNext];
     [self versionCompar];
     [self getIpAddress];
+    [self printMacro];
 }
-
-/// 获取ip地址-支持获取ipv6地址
+-(void)printMacro{
+    DLog(@"nixs");
+    DLog(@"---kScreenHeight:%lf",kScreenHeight);
+    kStartTime
+    kEndTime;
+    
+    NIViewSetRadius(self.btnNext, 5.0);
+    UIColor* color = [UIColor blueColor];
+    NIViewBorderRadius(self.btnNext, 5, color.CGColor);
+    
+}
+///
 -(void)getIpAddress{
     NSLog(@"---ipAddress:%@",[NIIPTools NIGetIPAddress]);
 }

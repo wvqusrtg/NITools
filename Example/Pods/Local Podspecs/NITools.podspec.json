@@ -43,6 +43,10 @@
   },
   "subspecs": [
     {
+      "name": "NIMacro",
+      "source_files": "NITools/Classes/NIMacro/*.{h,m}"
+    },
+    {
       "name": "NICategory",
       "source_files": "NITools/Classes/NICategory/*.{h,m}"
     },

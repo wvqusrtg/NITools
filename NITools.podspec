@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NITools'
-  s.version          = '0.1.3'
-  s.summary          = '个人工具类集合整理:尝试组件开发-新增NSString分类(NSString+VersionCompare.h/m)-app发布版本号比较;新增获取ip地址工具类-支持获取ipv6地址'
+  s.version          = '0.1.4'
+  s.summary          = '个人工具类集合整理:尝试组件开发-常用宏整理NIMacro/Macro.h'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = '新增NSString分类-app版本比较'
+  s.description      = '常用宏整理'
   
   s.homepage         = 'https://github.com/wvqusrtg/NITools'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -29,6 +29,10 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   # 这里是最终需要编译出来的代码文件目录，一般不需要改动，记得把代码文件拉到这个文件夹就行
   # s.source_files = 'NITools/Classes/**/*'
+  
+  s.subspec 'NIMacro' do |ss|
+      ss.source_files = 'NITools/Classes/NIMacro/*.{h,m}'
+  end
   
   s.subspec 'NICategory' do |ss|
       ss.source_files = 'NITools/Classes/NICategory/*.{h,m}'

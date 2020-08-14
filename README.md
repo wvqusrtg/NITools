@@ -29,6 +29,8 @@ nixs@nixs-iMac NITools % tree -N
     ├── NIIPTool
     │   ├── NIIPTools.h - 获取ip地址工具类,支持获取ipv6地址
     │   └── NIIPTools.m
+    ├── NIMacro
+    │   ├── Macro.h - 常用宏定义整理
     └── NIView
         ├── NIPrivacyView.h - app启动隐私说明「自定义view」
         ├── NIPrivacyView.m
@@ -44,6 +46,7 @@ nixs@nixs-iMac NITools %
 
 ## 版本更新内容
  - 计划更新：组件的色系要能统一修改、组件属性尽量多开放、属性能精细修改、（NITools待更新）
+ - tag:0.1.4 - NITools：常用宏整理NIMacro/Macro.h(注:你可以拷贝出来放到你工程的PCH里,也可以PCH里直接引用该头文件)
  - tag:0.1.3 - NITools：新增NSString分类(NSString+VersionCompare.h/m)-app发布版本号比较;新增获取ip地址工具类-支持获取ipv6地址
  - tag:0.1.2 - NITools：优化NIPrivacyView.h/m(开放尽可能多的属性-方便使用者精细定制化)-「个人实践：pod lib编译验证不过、pod trunk push上传异常、 trunk push 到 CocoaPods 成功后 pod search 却搜不到的解决方法」;Allow Non-modular includes in Framework Mo 「修复」;
     <p style="color:red">-需要详细资料小伙伴联系我微信:wvqusrtg</p>
@@ -60,7 +63,7 @@ NITools is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'NITools', '~> 0.1.3'
+pod 'NITools', '~> 0.1.4'
 ```
 
 ## Author
