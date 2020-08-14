@@ -13,7 +13,7 @@
 #import "NITools/NSString+VersionCompare.h"
 #import "NITools/NIIPTools.h"
 #import "MBProgressHUD+Add/UIView+MBPHUD.h"
-#import "NITools/Macro.h"
+#import "NITools/NIMacro.h"
 
 @interface NIViewController ()
 @property(nonatomic,strong) UIButton *btnNext;

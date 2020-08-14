@@ -1,12 +1,12 @@
 //
-//  Macro.h
+//  NIMacro.h
 //  Pods
 //
 //  Created by nixs on 2020/8/14.
 //
 
-#ifndef Macro_h
-#define Macro_h
+#ifndef NIMacro_h
+#define NIMacro_h
 
 //------------------注:你可以拷贝出来放到你工程的PCH里,也可以PCH里直接引用该头文件------------------
 
@@ -202,4 +202,4 @@ blue:((float)(rgbValue & 0xFF)) / 255.0 alpha:1.0]
 [View.layer setCornerRadius:(Radius)]; \
 [View.layer setMasksToBounds:YES]     \
 
-#endif /* Macro_h */
+#endif /* NIMacro_h */

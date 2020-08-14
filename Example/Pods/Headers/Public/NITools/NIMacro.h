@@ -1,0 +1,1 @@
+../../../../../NITools/Classes/NIMacro/NIMacro.h
