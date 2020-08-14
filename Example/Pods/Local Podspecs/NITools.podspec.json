@@ -1,8 +1,8 @@
 {
   "name": "NITools",
-  "version": "0.1.4",
-  "summary": "个人工具类集合整理:尝试组件开发-常用宏整理NIMacro/Macro.h",
-  "description": "常用宏整理",
+  "version": "0.1.6",
+  "summary": "个人工具类集合整理:尝试组件开发- tag:0.1.6 - NITools：优化NITools.podspec 去除s.dependency AFNetworking强制要求的版本",
+  "description": "- tag:0.1.6 - NITools：优化NITools.podspec 去除s.dependency AFNetworking强制要求的版本",
   "homepage": "https://github.com/wvqusrtg/NITools",
   "license": {
     "type": "MIT",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/wvqusrtg/NITools.git",
-    "tag": "0.1.4"
+    "tag": "0.1.6"
   },
   "platforms": {
     "ios": "8.0"
@@ -32,7 +32,7 @@
   ],
   "dependencies": {
     "AFNetworking": [
-      "~> 2.3"
+
     ],
     "Masonry": [
 

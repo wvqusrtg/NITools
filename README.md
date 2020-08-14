@@ -69,7 +69,7 @@ NITools is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'NITools', '~> 0.1.5'
+pod 'NITools', '~> 0.1.6'
 ```
 
 ## Author
@@ -84,3 +84,16 @@ NITools is available under the MIT license. See the LICENSE file for more info.
 
 NITools
 
+## Tips
+- pod install 记录(Example - tag:0.1.6)
+```
+nixs@nixs-iMac Example % pod install
+Analyzing dependencies
+Downloading dependencies
+Installing AFNetworking (3.2.1)
+Installing NITools 0.1.6
+Generating Pods project
+Integrating client project
+Pod installation complete! There is 1 dependency from the Podfile and 4 total pods installed.
+nixs@nixs-iMac Example %
+```

@@ -1,48 +1,42 @@
 PODS:
-  - AFNetworking (2.7.0):
-    - AFNetworking/NSURLConnection (= 2.7.0)
-    - AFNetworking/NSURLSession (= 2.7.0)
-    - AFNetworking/Reachability (= 2.7.0)
-    - AFNetworking/Security (= 2.7.0)
-    - AFNetworking/Serialization (= 2.7.0)
-    - AFNetworking/UIKit (= 2.7.0)
-  - AFNetworking/NSURLConnection (2.7.0):
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.7.0):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.7.0)
-  - AFNetworking/Security (2.7.0)
-  - AFNetworking/Serialization (2.7.0)
-  - AFNetworking/UIKit (2.7.0):
-    - AFNetworking/NSURLConnection
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
   - Masonry (1.1.0)
-  - NITools (0.1.4):
-    - AFNetworking (~> 2.3)
+  - NITools (0.1.6):
+    - AFNetworking
     - Masonry
-    - NITools/NICategory (= 0.1.4)
-    - NITools/NIIPTool (= 0.1.4)
-    - NITools/NIMacro (= 0.1.4)
-    - NITools/NIView (= 0.1.4)
+    - NITools/NICategory (= 0.1.6)
+    - NITools/NIIPTool (= 0.1.6)
+    - NITools/NIMacro (= 0.1.6)
+    - NITools/NIView (= 0.1.6)
     - YYText
-  - NITools/NICategory (0.1.4):
-    - AFNetworking (~> 2.3)
-    - Masonry
-    - YYText
-  - NITools/NIIPTool (0.1.4):
-    - AFNetworking (~> 2.3)
+  - NITools/NICategory (0.1.6):
+    - AFNetworking
     - Masonry
     - YYText
-  - NITools/NIMacro (0.1.4):
-    - AFNetworking (~> 2.3)
+  - NITools/NIIPTool (0.1.6):
+    - AFNetworking
     - Masonry
     - YYText
-  - NITools/NIView (0.1.4):
-    - AFNetworking (~> 2.3)
+  - NITools/NIMacro (0.1.6):
+    - AFNetworking
+    - Masonry
+    - YYText
+  - NITools/NIView (0.1.6):
+    - AFNetworking
     - Masonry
     - YYText
   - YYText (1.0.7)
@@ -61,9 +55,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AFNetworking: 8dd5f9b9691e09186393069a12cc3b5ed7c8b511
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  NITools: 4e4b1ff7cc2734f235a58fdfd8a7a5ac051e779c
+  NITools: 351c672178813b9207c0d41b8328b09221fc9c27
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
 PODFILE CHECKSUM: 930df48b72abf60bcd11071e85a550c61b675814
