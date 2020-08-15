@@ -30,14 +30,14 @@
     }];
     [self.bgView.layer setCornerRadius:5];
     
-//    NSBundle *bundle = [NSBundle bundleForClass:[NINetworkDetectionView class]];
-//    NSURL *bundleURL = [bundle URLForResource:@"NITools" withExtension:@"bundle"];
-//    NSBundle *resourceBundle = [NSBundle bundleWithURL: bundleURL];
-//    UIImage *img = [UIImage imageNamed:@"netError" inBundle:resourceBundle compatibleWithTraitCollection:nil];
+    NSBundle *bundle = [NSBundle bundleForClass:[NINetworkDetectionView class]];
+    NSURL *bundleURL = [bundle URLForResource:@"NITools" withExtension:@"bundle"];
+    NSBundle *resourceBundle = [NSBundle bundleWithURL: bundleURL];
+    UIImage *img = [UIImage imageNamed:@"netError" inBundle:resourceBundle compatibleWithTraitCollection:nil];
     
-    NSURL *bundleURL = [[NSBundle mainBundle] URLForResource:@"NITools" withExtension:@"bundle"];
-    NSBundle *bundle = [NSBundle bundleWithURL:bundleURL];
-    UIImage *img = [UIImage imageNamed:@"netError" inBundle:bundle compatibleWithTraitCollection:nil];
+//    NSURL *bundleURL = [[NSBundle mainBundle] URLForResource:@"NITools" withExtension:@"bundle"];
+//    NSBundle *bundle = [NSBundle bundleWithURL:bundleURL];
+//    UIImage *img = [UIImage imageNamed:@"netError" inBundle:bundle compatibleWithTraitCollection:nil];
     
     //UIImage *img = IMAGE(@"netError");// 该种方法行不通-上面两种方法都行
     
