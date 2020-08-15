@@ -35,7 +35,6 @@
 //    NSBundle *resourceBundle = [NSBundle bundleWithURL: bundleURL];
 //    UIImage *img = [UIImage imageNamed:@"netError" inBundle:resourceBundle compatibleWithTraitCollection:nil];
     
-    
     NSURL *bundleURL = [[NSBundle mainBundle] URLForResource:@"NITools" withExtension:@"bundle"];
     NSBundle *bundle = [NSBundle bundleWithURL:bundleURL];
     UIImage *img = [UIImage imageNamed:@"netError" inBundle:bundle compatibleWithTraitCollection:nil];

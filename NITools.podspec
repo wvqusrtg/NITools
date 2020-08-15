@@ -52,7 +52,7 @@ Pod::Spec.new do |s|
   
   # 这里存放的是资源文件
    s.resource_bundles = {
-     'NITools' => ['NITools/Assets/*.{png,xib,nib,bundle}']
+     'NITools' => ['NITools/Assets/*']
    }
   # 这里推荐这么写，将该目录下的.h文件暴露出来
   s.public_header_files = 'Pod/Classes/**/*.h'
