@@ -61,7 +61,10 @@
 		572D05B146EAA3EF5530A0D0E34904A0 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6890FD0C5403797359ED745112D88162 /* MASViewConstraint.m */; };
 		58458C751ABFC499005E6C670EB1A83E /* YYLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 158EE78275EB2BE9DF843D51D7F7BD29 /* YYLabel.m */; };
 		589EA2E8BA83606A8337322959B2FB89 /* YYLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = CDE831BD07C2ED93F6DEEFB9FC7D2509 /* YYLabel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5907B5FA24E78A30005DEE53 /* NITools.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5907B5F924E78A30005DEE53 /* NITools.bundle */; };
+		5907B60124E79214005DEE53 /* netError.png in Resources */ = {isa = PBXBuildFile; fileRef = 5907B5FD24E79214005DEE53 /* netError.png */; };
+		5907B60224E79214005DEE53 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 5907B5FE24E79214005DEE53 /* .gitkeep */; };
+		5907B60324E79214005DEE53 /* netError@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5907B5FF24E79214005DEE53 /* netError@2x.png */; };
+		5907B60424E79214005DEE53 /* netError@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5907B60024E79214005DEE53 /* netError@3x.png */; };
 		59EA578EED8BAC126FDC60C32AE11521 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A5FB4C5ABB520D969408117BA4F7DB /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		5FF1B4EEDEE8BCA2E676E2548A412B02 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = C5F8BCFE27E34FD081D9FAAF961907BD /* AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		61C65DF8F422706D0EC1323C1DA26943 /* YYTextLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 3948E3571F36790B85D00B358BA0A175 /* YYTextLine.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -254,7 +257,10 @@
 		5177EE1D968AB567898FE600DFA7678F /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
 		5832CDDB84AFD97FADF9E43DD7E9212F /* YYText.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYText.debug.xcconfig; sourceTree = "<group>"; };
 		5856A266A5EA0B30DF5B2E53D8D62D06 /* NSString+VersionCompare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+VersionCompare.h"; path = "NITools/Classes/NICategory/NSString+VersionCompare.h"; sourceTree = "<group>"; };
-		5907B5F924E78A30005DEE53 /* NITools.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = NITools.bundle; path = NITools/Assets/NITools.bundle; sourceTree = "<group>"; };
+		5907B5FD24E79214005DEE53 /* netError.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = netError.png; sourceTree = "<group>"; };
+		5907B5FE24E79214005DEE53 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		5907B5FF24E79214005DEE53 /* netError@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "netError@2x.png"; sourceTree = "<group>"; };
+		5907B60024E79214005DEE53 /* netError@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "netError@3x.png"; sourceTree = "<group>"; };
 		5BDE749D2607884C4EA954348F228D22 /* YYText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYText.h; path = YYText/YYText.h; sourceTree = "<group>"; };
 		5CA5AE203A6933BCB8C7F82B9066E9D9 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
 		5F7F70CB8083FF56362C07513D4BF106 /* YYTextLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextLayout.m; path = YYText/Component/YYTextLayout.m; sourceTree = "<group>"; };
@@ -482,7 +488,7 @@
 		19170B0F84281D6BD8B381D8E70EE8F1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5907B5F924E78A30005DEE53 /* NITools.bundle */,
+				5907B5FB24E791E2005DEE53 /* NITools */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -597,6 +603,26 @@
 				9FDFCBBC5A7ED8C98041AFD890578A3A /* AFNetworkReachabilityManager.m */,
 			);
 			name = Reachability;
+			sourceTree = "<group>";
+		};
+		5907B5FB24E791E2005DEE53 /* NITools */ = {
+			isa = PBXGroup;
+			children = (
+				5907B5FC24E79214005DEE53 /* Assets */,
+			);
+			name = NITools;
+			sourceTree = "<group>";
+		};
+		5907B5FC24E79214005DEE53 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				5907B5FE24E79214005DEE53 /* .gitkeep */,
+				5907B5FD24E79214005DEE53 /* netError.png */,
+				5907B5FF24E79214005DEE53 /* netError@2x.png */,
+				5907B60024E79214005DEE53 /* netError@3x.png */,
+			);
+			name = Assets;
+			path = NITools/Assets;
 			sourceTree = "<group>";
 		};
 		7396422A11722B140B2B274AA249EAB7 /* Pods-NITools_Example */ = {
@@ -1089,7 +1115,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5907B5FA24E78A30005DEE53 /* NITools.bundle in Resources */,
+				5907B60324E79214005DEE53 /* netError@2x.png in Resources */,
+				5907B60124E79214005DEE53 /* netError.png in Resources */,
+				5907B60424E79214005DEE53 /* netError@3x.png in Resources */,
+				5907B60224E79214005DEE53 /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
