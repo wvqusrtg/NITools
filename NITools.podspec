@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NITools'
-  s.version          = '0.1.6'
+  s.version          = '0.1.7'
   s.summary          = '个人工具类集合整理:尝试组件开发 - tag:0.1.7 - NITools：自定义View(NINetworkDetectionView.h/m)使用资源文件'
 
 # This description is used to generate tags and improve search results.
