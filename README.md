@@ -12,9 +12,11 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## 效果
  - 自定义view组件效果
+
 ![版本更新](./Res/demo.gif)
 ![隐私政策](./Res/demo2.gif)
  - 阴影、指定圆角、暗黑颜色适配
+
 ![UIView+NIFrame、UIColor+NIColor](./Res/WechatIMG51.png)
 ![UIView+NIFrame、UIColor+NIColor](./Res/WechatIMG52.png)
 
@@ -50,6 +52,7 @@ nixs@nixs-iMac Classes %
 
 ## 版本更新内容
  - 计划更新：组件的色系要能统一修改、组件属性尽量多开放、属性能精细修改、（NITools待更新）
+ - tag:0.1.9 - NITools：自定义View(NINetworkDetectionView.h/m-加载图片优化)使用资源文件-优化NSBundle引入资源文件 
  - tag:0.1.8 - NITools：自定义View(NINetworkDetectionView.h/m)使用资源文件-优化NSBundle引入资源文件
  - tag:0.1.7 - NITools：自定义View(NINetworkDetectionView.h/m)使用资源文件
  - tag:0.1.6 - NITools：优化NITools.podspec 去除s.dependency 'AFNetworking'强制要求的版本
@@ -71,7 +74,7 @@ NITools is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'NITools', '~> 0.1.8'
+pod 'NITools', '~> 0.1.9'
 ```
 
 ## Author

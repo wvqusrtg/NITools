@@ -24,8 +24,9 @@
 }
 -(UILabel *)labTitle{
     if (!_labTitle) {
-        _labTitle =[[UILabel alloc] initWithFrame:CGRectMake(0, 88, [UIScreen mainScreen].bounds.size.width, 44)];
+        _labTitle =[[UILabel alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 88)];
         _labTitle.text = @"Home";
+        _labTitle.font = [UIFont systemFontOfSize:20 weight:10];
         _labTitle.textColor = [UIColor whiteColor];
         _labTitle.textAlignment = NSTextAlignmentCenter;
         _labTitle.backgroundColor = [UIColor redColor];

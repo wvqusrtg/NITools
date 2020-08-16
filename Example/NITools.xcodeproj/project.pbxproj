@@ -207,8 +207,8 @@
 		8CFB219924DB91BD006C078E /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				8CFB219A24DB91BD006C078E /* BaseViewController.m */,
 				8CFB219B24DB91BD006C078E /* BaseViewController.h */,
+				8CFB219A24DB91BD006C078E /* BaseViewController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";

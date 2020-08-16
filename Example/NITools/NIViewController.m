@@ -30,6 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.labTitle.text = @"Example for NITools";
     [self.view addSubview:self.btnNext];
     [self versionCompar];
     [self getIpAddress];
@@ -131,7 +132,7 @@
 /// 懒加载
 -(UIButton *)btnNext{
     if (!_btnNext) {
-        _btnNext = [[UIButton alloc] initWithFrame:CGRectMake(20, 150, kScreenWidth-40, 50)];
+        _btnNext = [[UIButton alloc] initWithFrame:CGRectMake(20, 88+5, kScreenWidth-40, 50)];
         [_btnNext setTitle:@"下一页" forState:UIControlStateNormal];
         [_btnNext setBackgroundColor:[UIColor redColor]];
         [_btnNext setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
@@ -141,7 +142,7 @@
 }
 -(UIView *)view015{
     if (!_view015) {
-        _view015 = [[UIView alloc] initWithFrame:CGRectMake(10, self.btnNext.bottom+10, kScreenWidth/3, 100)];
+        _view015 = [[UIView alloc] initWithFrame:CGRectMake(10, self.btnNext.bottom+5, kScreenWidth/3, 100)];
         //非暗黑-红色、暗黑-蓝色
         [_view015 setBackgroundColor:[UIColor colorWithLightColor:[UIColor redColor] DarkColor:[UIColor blueColor]]];
         
@@ -152,7 +153,7 @@
 }
 -(UIView *)view015_2{
     if (!_view015_2) {
-        _view015_2 = [[UIView alloc] initWithFrame:CGRectMake(kScreenWidth-kScreenWidth/3-10, self.btnNext.bottom+10, 100, 100)];
+        _view015_2 = [[UIView alloc] initWithFrame:CGRectMake(kScreenWidth-kScreenWidth/3-10, self.btnNext.bottom+5, 100, 100)];
         //非暗黑-红色、暗黑-蓝色
         [_view015_2 setBackgroundColor:[UIColor colorWithLightColor:[UIColor redColor] DarkColor:[UIColor blueColor]]];
         //[_view015 round:50.0 RectCorners:UIRectCornerBottomRight];
