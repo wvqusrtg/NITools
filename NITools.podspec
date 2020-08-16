@@ -52,7 +52,7 @@ Pod::Spec.new do |s|
   #如下s.resources是旧方法
   # s.resources = 'NITools/Classes/Res/*.{png,xib,nib,bundle}'
   
-   这里存放的是资源文件
+  #这里存放的是资源文件-新方法
    s.resource_bundles = {
      'NITools' => ['NITools/Assets/*.{png,xib,nib,bundle}']
    }
