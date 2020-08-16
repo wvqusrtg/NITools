@@ -76,6 +76,16 @@
 		8C0ADCC124E8FA77008A5603 /* netError.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C0ADCBE24E8FA76008A5603 /* netError.png */; };
 		8C0ADCC224E8FA77008A5603 /* netError@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C0ADCBF24E8FA77008A5603 /* netError@2x.png */; };
 		8C0ADCC324E8FA77008A5603 /* netError@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C0ADCC024E8FA77008A5603 /* netError@3x.png */; };
+		8C0ADCCD24E92ACB008A5603 /* NSBundle+NILibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C0ADCCB24E92ACA008A5603 /* NSBundle+NILibrary.h */; };
+		8C0ADCCE24E92ACB008A5603 /* NSBundle+NILibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C0ADCCB24E92ACA008A5603 /* NSBundle+NILibrary.h */; };
+		8C0ADCCF24E92ACB008A5603 /* NSBundle+NILibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0ADCCC24E92ACA008A5603 /* NSBundle+NILibrary.m */; };
+		8C0ADCD024E92ACB008A5603 /* NSBundle+NILibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0ADCCC24E92ACA008A5603 /* NSBundle+NILibrary.m */; };
+		8C0ADCD124E92ACB008A5603 /* NSBundle+NILibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0ADCCC24E92ACA008A5603 /* NSBundle+NILibrary.m */; };
+		8C0ADCDB24E92FAC008A5603 /* UIImage+NILibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0ADCD924E92FA9008A5603 /* UIImage+NILibrary.m */; };
+		8C0ADCDC24E92FAC008A5603 /* UIImage+NILibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0ADCD924E92FA9008A5603 /* UIImage+NILibrary.m */; };
+		8C0ADCDD24E92FAC008A5603 /* UIImage+NILibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0ADCD924E92FA9008A5603 /* UIImage+NILibrary.m */; };
+		8C0ADCDE24E92FAC008A5603 /* UIImage+NILibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C0ADCDA24E92FA9008A5603 /* UIImage+NILibrary.h */; };
+		8C0ADCDF24E92FAC008A5603 /* UIImage+NILibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C0ADCDA24E92FA9008A5603 /* UIImage+NILibrary.h */; };
 		8D253221F717F199718A569292A88EA5 /* YYLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 158EE78275EB2BE9DF843D51D7F7BD29 /* YYLabel.m */; };
 		9194B58ACE900ED6BAE6AD92E24A2CFF /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 6335E13F2B6A6A3B2B6CA94C08A9CFC7 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		92BF70E9D3285561EB404A7C4A4A6DEE /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 64A56DDCDC6C8328798D3B01615D959D /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -295,6 +305,10 @@
 		8C0ADCBE24E8FA76008A5603 /* netError.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = netError.png; path = NITools/Assets/netError.png; sourceTree = "<group>"; };
 		8C0ADCBF24E8FA77008A5603 /* netError@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "netError@2x.png"; path = "NITools/Assets/netError@2x.png"; sourceTree = "<group>"; };
 		8C0ADCC024E8FA77008A5603 /* netError@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "netError@3x.png"; path = "NITools/Assets/netError@3x.png"; sourceTree = "<group>"; };
+		8C0ADCCB24E92ACA008A5603 /* NSBundle+NILibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSBundle+NILibrary.h"; path = "NITools/Classes/NICategory/NSBundle+NILibrary.h"; sourceTree = "<group>"; };
+		8C0ADCCC24E92ACA008A5603 /* NSBundle+NILibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+NILibrary.m"; path = "NITools/Classes/NICategory/NSBundle+NILibrary.m"; sourceTree = "<group>"; };
+		8C0ADCD924E92FA9008A5603 /* UIImage+NILibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+NILibrary.m"; path = "NITools/Classes/NICategory/UIImage+NILibrary.m"; sourceTree = "<group>"; };
+		8C0ADCDA24E92FA9008A5603 /* UIImage+NILibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+NILibrary.h"; path = "NITools/Classes/NICategory/UIImage+NILibrary.h"; sourceTree = "<group>"; };
 		8D4156B43F2FFF53CBC1BDF88BB6EAE7 /* UIColor+NIColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+NIColor.m"; path = "NITools/Classes/NICategory/UIColor+NIColor.m"; sourceTree = "<group>"; };
 		909A9B5088093C0D235001C402E55402 /* YYText-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYText-prefix.pch"; sourceTree = "<group>"; };
 		924CA93EE6E6D842E621BA54F62A9338 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
@@ -561,6 +575,10 @@
 		33E59E2BC2879AA0B5C44CE93B92DC73 /* NICategory */ = {
 			isa = PBXGroup;
 			children = (
+				8C0ADCDA24E92FA9008A5603 /* UIImage+NILibrary.h */,
+				8C0ADCD924E92FA9008A5603 /* UIImage+NILibrary.m */,
+				8C0ADCCB24E92ACA008A5603 /* NSBundle+NILibrary.h */,
+				8C0ADCCC24E92ACA008A5603 /* NSBundle+NILibrary.m */,
 				5856A266A5EA0B30DF5B2E53D8D62D06 /* NSString+VersionCompare.h */,
 				79F022E1290264C69724243D504B5256 /* NSString+VersionCompare.m */,
 				3B116B5FB2A56C9AAC89AE4DBCFCAE27 /* UIColor+NIColor.h */,
@@ -908,6 +926,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C0ADCCE24E92ACB008A5603 /* NSBundle+NILibrary.h in Headers */,
+				8C0ADCDF24E92FAC008A5603 /* UIImage+NILibrary.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -922,6 +942,8 @@
 				47F897BB0D2FB70E9F3CEDB6560CEC04 /* NIVersionManagerView.h in Headers */,
 				95BA58F63DE10F25F8AC311B969D92D4 /* NSString+VersionCompare.h in Headers */,
 				56A3578951488E804172EF5F8CFFC9FE /* UIColor+NIColor.h in Headers */,
+				8C0ADCDE24E92FAC008A5603 /* UIImage+NILibrary.h in Headers */,
+				8C0ADCCD24E92ACB008A5603 /* NSBundle+NILibrary.h in Headers */,
 				CFECDCC5D52016F222B9ACF37A396D72 /* UIView+NIFrame.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1131,6 +1153,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C0ADCDC24E92FAC008A5603 /* UIImage+NILibrary.m in Sources */,
+				8C0ADCD024E92ACB008A5603 /* NSBundle+NILibrary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1139,6 +1163,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				92DDADA5774D4813BD6146D4D404FB66 /* Pods-NITools_Example-dummy.m in Sources */,
+				8C0ADCD124E92ACB008A5603 /* NSBundle+NILibrary.m in Sources */,
+				8C0ADCDD24E92FAC008A5603 /* UIImage+NILibrary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1206,6 +1232,8 @@
 			files = (
 				0408DD61E6323BD26208B2A085E6A9BA /* NIIPTools.m in Sources */,
 				B6F3A94A5B2D27CDC2CC5E6BA02D3DA7 /* NINetworkDetectionView.m in Sources */,
+				8C0ADCDB24E92FAC008A5603 /* UIImage+NILibrary.m in Sources */,
+				8C0ADCCF24E92ACB008A5603 /* NSBundle+NILibrary.m in Sources */,
 				C57A16DF86B094F91478AD54646CE539 /* NIPrivacyView.m in Sources */,
 				6120E757D97E0B2A6CAF9B8EB8672874 /* NITools-dummy.m in Sources */,
 				198E41FD163CB1BD54B6CD9CB04CB79F /* NIVersionManagerView.m in Sources */,

@@ -9,6 +9,7 @@
 #define MainScreenRect [UIScreen mainScreen].bounds
 #import "Masonry.h"
 #import "NIMacro.h"
+#import "UIImage+NILibrary.h"
 
 @implementation NINetworkDetectionView
 
@@ -29,18 +30,21 @@
         make.center.mas_equalTo(self);
     }];
     [self.bgView.layer setCornerRadius:5];
+    //UIImage *img = IMAGE(@"netError");// 该种方法行不通-上面两种方法都行
     
+    //一、旧方法
 //    NSURL *bundleURL = [[NSBundle mainBundle] URLForResource:@"NITools" withExtension:@"bundle"];
 //    NSBundle *bundle = [NSBundle bundleWithURL:bundleURL];
 //    UIImage *img = [UIImage imageNamed:@"netError" inBundle:bundle compatibleWithTraitCollection:nil];
     
-    //优化如下:
-    NSBundle *bundle = [NSBundle bundleForClass:[NINetworkDetectionView class]];
-    NSURL *bundleURL = [bundle URLForResource:@"NITools" withExtension:@"bundle"];
-    NSBundle *resourceBundle = [NSBundle bundleWithURL: bundleURL];
-    UIImage *img = [UIImage imageNamed:@"netError" inBundle:resourceBundle compatibleWithTraitCollection:nil];
+    //二、优化如下:
+//    NSBundle *bundle = [NSBundle bundleForClass:[NINetworkDetectionView class]];
+//    NSURL *bundleURL = [bundle URLForResource:@"NITools" withExtension:@"bundle"];
+//    NSBundle *resourceBundle = [NSBundle bundleWithURL: bundleURL];
+//    UIImage *img = [UIImage imageNamed:@"netError" inBundle:resourceBundle compatibleWithTraitCollection:nil];
     
-    //UIImage *img = IMAGE(@"netError");// 该种方法行不通-上面两种方法都行
+    //三、优化抽离分类如下:(2020年08月16日17:20:48)
+    UIImage *img = [UIImage NIBundleImageNamed:@"netError" withClassName:@"NINetworkDetectionView"];
     
     self.noNetWorkImageView = [[UIImageView alloc] initWithImage:img];
     [self.bgView addSubview:self.noNetWorkImageView];
