@@ -26,6 +26,10 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 nixs@nixs-iMac Classes % tree -N
 .
 ├── NICategory
+|   ├── UIImage+NILibrary.h - tag:0.2.0 - NITools：pod类里使用图片资源文件-优化抽离NSBundle+NILibrary、UIImage+NILibrary分类
+|   ├── UIImage+NILibrary.m
+|   ├── NSBundle+NILibrary.h
+|   ├── NSBundle+NILibrary.h
 │   ├── NSString+VersionCompare.h - app版本比较分类
 │   ├── NSString+VersionCompare.m
 │   ├── UIColor+NIColor.h - iOS13-适配暗黑颜色控制
