@@ -15,29 +15,30 @@ PODS:
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
   - Masonry (1.1.0)
-  - NITools (0.1.6):
+  - NITools (0.2.0):
     - AFNetworking
     - Masonry
-    - NITools/NICategory (= 0.1.6)
-    - NITools/NIIPTool (= 0.1.6)
-    - NITools/NIMacro (= 0.1.6)
-    - NITools/NIView (= 0.1.6)
+    - NITools/NICategory (= 0.2.0)
+    - NITools/NIIPTool (= 0.2.0)
+    - NITools/NIMacro (= 0.2.0)
+    - NITools/NIView (= 0.2.0)
     - YYText
-  - NITools/NICategory (0.1.6):
-    - AFNetworking
-    - Masonry
-    - YYText
-  - NITools/NIIPTool (0.1.6):
+  - NITools/NICategory (0.2.0):
     - AFNetworking
     - Masonry
     - YYText
-  - NITools/NIMacro (0.1.6):
+  - NITools/NIIPTool (0.2.0):
     - AFNetworking
     - Masonry
     - YYText
-  - NITools/NIView (0.1.6):
+  - NITools/NIMacro (0.2.0):
     - AFNetworking
     - Masonry
+    - YYText
+  - NITools/NIView (0.2.0):
+    - AFNetworking
+    - Masonry
+    - NITools/NICategory
     - NITools/NIMacro
     - YYText
   - YYText (1.0.7)
@@ -58,9 +59,9 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  NITools: 8d5b0eaf597cefc3d66c2a06265fce74c2aee278
+  NITools: 5bee48e32a918613640d030da77c32f17606aab6
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 930df48b72abf60bcd11071e85a550c61b675814
+PODFILE CHECKSUM: e58524a045979c23e9b5d1edcb6b1c25d3ee3f19
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.9.2

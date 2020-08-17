@@ -10,6 +10,16 @@
 #endif
 #endif
 
+#import "NSBundle+NILibrary.h"
+#import "NSString+VersionCompare.h"
+#import "UIColor+NIColor.h"
+#import "UIImage+NILibrary.h"
+#import "UIView+NIFrame.h"
+#import "NIIPTools.h"
+#import "NIMacro.h"
+#import "NINetworkDetectionView.h"
+#import "NIPrivacyView.h"
+#import "NIVersionManagerView.h"
 
 FOUNDATION_EXPORT double NIToolsVersionNumber;
 FOUNDATION_EXPORT const unsigned char NIToolsVersionString[];
