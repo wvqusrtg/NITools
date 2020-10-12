@@ -16,6 +16,7 @@
 #import "NITools/NIMacro.h"
 #import "NITools/UIColor+NIColor.h"
 #import "NITools/NINetworkDetectionView.h"
+#import "YYKit/YYkit.h"
 
 @interface NIViewController ()
 @property(nonatomic,strong) UIButton *btnNext;
@@ -38,8 +39,10 @@
     [self tag015_eg];
     [self showNINetworkDetectionView];
 }
+
+/// 展示断网监测结果页面
 -(void)showNINetworkDetectionView{
-    [self.view addSubview:self.networkDetectionView];
+    //[self.view addSubview:self.networkDetectionView];
     /**
      //*自定义网络异常视图放到每个控制器视图-最上层
      UIWindow* mainWindow = [self lastWindow];
@@ -118,14 +121,21 @@
      */
      NIPrivacyView* priView = [[NIPrivacyView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
      [self.view addSubview:priView];
+     @weakify(priView)
      priView.btnOKBlock = ^{
+         @strongify(priView)
          [self.view showHUDMessage:@"btnOKBlock"];
+         [priView removeFromSuperview];
      };
      priView.btnExitBlock = ^{
+         @strongify(priView)
          [self.view showHUDMessage:@"btnExitBlock"];
+         [priView removeFromSuperview];
      };
      priView.privacyBlock = ^{
-       [self.view showHUDMessage:@"隐私详情"];
+         @strongify(priView)
+         [self.view showHUDMessage:@"隐私详情"];
+         [priView removeFromSuperview];
      };
 }
 

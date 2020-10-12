@@ -41,15 +41,20 @@ PODS:
     - NITools/NICategory
     - NITools/NIMacro
     - YYText
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
   - YYText (1.0.7)
 
 DEPENDENCIES:
   - NITools (from `../`)
+  - YYKit (~> 1.0.9)
 
 SPEC REPOS:
   trunk:
     - AFNetworking
     - Masonry
+    - YYKit
     - YYText
 
 EXTERNAL SOURCES:
@@ -60,8 +65,9 @@ SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   NITools: 5bee48e32a918613640d030da77c32f17606aab6
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: e58524a045979c23e9b5d1edcb6b1c25d3ee3f19
+PODFILE CHECKSUM: 7c27e61e624c4ce83becfe0289a9c010f9c15f28
 
 COCOAPODS: 1.9.2
