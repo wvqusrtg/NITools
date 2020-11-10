@@ -56,4 +56,9 @@
     // 版本号相等
     return 0;
 }
+
++ (NSString*)NIgetCurrentVersion{
+    NSString* appVersion = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
+    return appVersion;
+}
 @end

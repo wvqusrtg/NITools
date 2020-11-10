@@ -76,6 +76,10 @@
 
         ]
       }
+    },
+    {
+      "name": "NISandBoxTool",
+      "source_files": "NITools/Classes/NISandBoxTool/*.{h,m}"
     }
   ]
 }

@@ -17,6 +17,7 @@
 #import "UIView+NIFrame.h"
 #import "NIIPTools.h"
 #import "NIMacro.h"
+#import "NISandBoxTools.h"
 #import "NINetworkDetectionView.h"
 #import "NIPrivacyView.h"
 #import "NIVersionManagerView.h"
