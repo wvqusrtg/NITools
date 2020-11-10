@@ -29,7 +29,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
  - tag:0.2.1 - NITools:(NSString+VersionCompare)新增获取当前版本号(实例)方法;
              - NITools:NISandBoxTools.h/m 工具类新增;
- 2020年10月12日16:52:37-Example 测试案例里新增 pod 引入 pod 'YYKit', '~> 1.0.9',实际项目当中一定注意YYkit的完全引入和单独引入某一个分支可能会产生冲突，这个项目搭建时候一定要好好斟酌
+ - 2020年10月12日16:52:37-Example 测试案例里新增 pod 引入 pod 'YYKit', '~> 1.0.9',实际项目当中一定注意YYkit的完全引入和单独引入某一个分支可能会产生冲突，这个项目搭建时候一定要好好斟酌
  - tag:0.2.0 - NITools：pod类里使用图片资源文件-优化抽离NSBundle+NILibrary、UIImage+NILibrary分类 
  - tag:0.1.9 - NITools：自定义View(NINetworkDetectionView.h/m-加载图片优化)使用资源文件-优化NSBundle引入资源文件 
  - tag:0.1.8 - NITools：自定义View(NINetworkDetectionView.h/m)使用资源文件-优化NSBundle引入资源文件
