@@ -37,6 +37,9 @@
     [self printMacro];
     [self tag015_eg];
     [self showNINetworkDetectionView];
+    
+    NSString *idfv = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+    NSLog(@"---idfv:%@",idfv);
 }
 -(void)showNINetworkDetectionView{
     [self.view addSubview:self.networkDetectionView];
