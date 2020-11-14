@@ -20,42 +20,16 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ![UIView+NIFrame、UIColor+NIColor](./Res/WechatIMG51.png)
 ![UIView+NIFrame、UIColor+NIColor](./Res/WechatIMG52.png)
 
-## 目录结构
-```
-/Users/nixs/Documents/iOSDemo/NITools/NITools
-nixs@nixs-iMac Classes % tree -N
-.
-├── NICategory
-|   ├── UIImage+NILibrary.h - tag:0.2.0 - NITools：pod类里使用图片资源文件-优化抽离NSBundle+NILibrary、UIImage+NILibrary分类
-|   ├── UIImage+NILibrary.m
-|   ├── NSBundle+NILibrary.h
-|   ├── NSBundle+NILibrary.h
-│   ├── NSString+VersionCompare.h - app版本比较分类
-│   ├── NSString+VersionCompare.m
-│   ├── UIColor+NIColor.h - iOS13-适配暗黑颜色控制
-│   ├── UIColor+NIColor.m
-│   ├── UIView+NIFrame.h - UIView 扩展分类(新增边框、圆角、指定圆角控制)-注意和Masnory一起引入工程时候，不要用Masnory宏定义
-│   └── UIView+NIFrame.m
-├── NIIPTool
-│   ├── NIIPTools.h - 获取ip地址工具类,支持获取ipv6地址
-│   └── NIIPTools.m
-├── NIMacro
-│   └── NIMacro.h - 常用宏定义整理
-└── NIView
-    ├── NIPrivacyView.h - app启动隐私说明「自定义view」
-    ├── NIPrivacyView.m
-    ├── NIVersionManagerView.h - 版本更新描述「自定义view」
-    └── NIVersionManagerView.m
-
-4 directories, 13 files
-nixs@nixs-iMac Classes %
-```
-
 ## 使用示例
  - 参见./Example/NITools/NIViewController.m
 
 ## 版本更新内容
  - 计划更新：组件的色系要能统一修改、组件属性尽量多开放、属性能精细修改、（NITools待更新）
+ 
+
+ - tag:0.2.1 - NITools:(NSString+VersionCompare)新增获取当前版本号(实例)方法;
+             - NITools:NISandBoxTools.h/m 工具类新增;
+ - 2020年10月12日16:52:37-Example 测试案例里新增 pod 引入 pod 'YYKit', '~> 1.0.9',实际项目当中一定注意YYkit的完全引入和单独引入某一个分支可能会产生冲突，这个项目搭建时候一定要好好斟酌
  - tag:0.2.0 - NITools：pod类里使用图片资源文件-优化抽离NSBundle+NILibrary、UIImage+NILibrary分类 
  - tag:0.1.9 - NITools：自定义View(NINetworkDetectionView.h/m-加载图片优化)使用资源文件-优化NSBundle引入资源文件 
  - tag:0.1.8 - NITools：自定义View(NINetworkDetectionView.h/m)使用资源文件-优化NSBundle引入资源文件
@@ -79,7 +53,7 @@ NITools is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'NITools', '~> 0.2.0'
+pod 'NITools', '~> 0.2.1'
 ```
 
 ## Author
@@ -95,15 +69,10 @@ NITools is available under the MIT license. See the LICENSE file for more info.
 NITools
 
 ## Tips
-- pod install 记录(Example - tag:0.1.6)
+- pod 提交
 ```
-nixs@nixs-iMac Example % pod install
-Analyzing dependencies
-Downloading dependencies
-Installing AFNetworking (3.2.1)
-Installing NITools 0.1.6
-Generating Pods project
-Integrating client project
-Pod installation complete! There is 1 dependency from the Podfile and 4 total pods installed.
-nixs@nixs-iMac Example %
+1.验证库是否有问题
+pod lib lint NITools.podspec --use-libraries --allow-warnings
+2.提交库
+pod trunk push NITools.podspec --use-libraries --allow-warnings
 ```

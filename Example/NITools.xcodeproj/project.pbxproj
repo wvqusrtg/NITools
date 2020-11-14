@@ -28,8 +28,8 @@
 		8CFB21A924DB934D006C078E /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CFB21A524DB934D006C078E /* MBProgressHUD.m */; };
 		8CFB21AA24DB934D006C078E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 8CFB21A624DB934D006C078E /* LICENSE */; };
 		8CFB21AB24DB934D006C078E /* README.mdown in Resources */ = {isa = PBXBuildFile; fileRef = 8CFB21A824DB934D006C078E /* README.mdown */; };
-		B62D88A187FA4894E3BC4BF3 /* libPods-NITools_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC1DE280342362CC53BBD81A /* libPods-NITools_Tests.a */; };
-		EADE8D35B59876EB355ECEA4 /* libPods-NITools_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F31BB9D1535B9222E695678 /* libPods-NITools_Example.a */; };
+		C75198AD728245A01F9534D2 /* Pods_NITools_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F1FAA096F1F89C1CC0790C /* Pods_NITools_Tests.framework */; };
+		DCEA84EEC391F2BBB6DDBC6F /* Pods_NITools_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792F7D0FB594D937C0D4A5E2 /* Pods_NITools_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +45,6 @@
 /* Begin PBXFileReference section */
 		36CB78F9CEAF6C681266E960 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4D35C90165537832BF320088 /* Pods-NITools_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NITools_Example.release.xcconfig"; path = "Target Support Files/Pods-NITools_Example/Pods-NITools_Example.release.xcconfig"; sourceTree = "<group>"; };
-		4F31BB9D1535B9222E695678 /* libPods-NITools_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NITools_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* NITools_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NITools_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,6 +65,7 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		792F7D0FB594D937C0D4A5E2 /* Pods_NITools_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NITools_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CFB219A24DB91BD006C078E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		8CFB219B24DB91BD006C078E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -78,11 +78,11 @@
 		8CFB21A724DB934D006C078E /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		8CFB21A824DB934D006C078E /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.mdown; sourceTree = "<group>"; };
 		936A96DAC002D6EDD535CEDE /* Pods-NITools_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NITools_Tests.debug.xcconfig"; path = "Target Support Files/Pods-NITools_Tests/Pods-NITools_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B0F1FAA096F1F89C1CC0790C /* Pods_NITools_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NITools_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F2802B79C926F31CB8BF41 /* NITools.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NITools.podspec; path = ../NITools.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D89CA4C71983E8F7B3EB6B2F /* Pods-NITools_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NITools_Tests.release.xcconfig"; path = "Target Support Files/Pods-NITools_Tests/Pods-NITools_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DE490B4163858C41F071C579 /* Pods-NITools_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NITools_Example.debug.xcconfig"; path = "Target Support Files/Pods-NITools_Example/Pods-NITools_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F1F0564444D7F36C6A528A2C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		FC1DE280342362CC53BBD81A /* libPods-NITools_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NITools_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +93,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				EADE8D35B59876EB355ECEA4 /* libPods-NITools_Example.a in Frameworks */,
+				DCEA84EEC391F2BBB6DDBC6F /* Pods_NITools_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +104,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				B62D88A187FA4894E3BC4BF3 /* libPods-NITools_Tests.a in Frameworks */,
+				C75198AD728245A01F9534D2 /* Pods_NITools_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +139,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				4F31BB9D1535B9222E695678 /* libPods-NITools_Example.a */,
-				FC1DE280342362CC53BBD81A /* libPods-NITools_Tests.a */,
+				792F7D0FB594D937C0D4A5E2 /* Pods_NITools_Example.framework */,
+				B0F1FAA096F1F89C1CC0790C /* Pods_NITools_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -257,7 +257,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				2A013FD3F3D42C938914A27C /* [CP] Copy Pods Resources */,
+				78A874A2744480F349235BE3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -373,22 +373,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2A013FD3F3D42C938914A27C /* [CP] Copy Pods Resources */ = {
+		78A874A2744480F349235BE3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NITools_Example/Pods-NITools_Example-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/NITools/NITools.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-NITools_Example/Pods-NITools_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/NITools/NITools.framework",
+				"${BUILT_PRODUCTS_DIR}/YYText/YYText.framework",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NITools.bundle",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NITools.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYText.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NITools_Example/Pods-NITools_Example-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NITools_Example/Pods-NITools_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		97B8034A43D6799019FABC68 /* [CP] Check Pods Manifest.lock */ = {

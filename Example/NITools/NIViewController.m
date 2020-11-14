@@ -16,6 +16,10 @@
 #import "NITools/NIMacro.h"
 #import "NITools/UIColor+NIColor.h"
 #import "NITools/NINetworkDetectionView.h"
+//#import "YYKit/YYkit.h"
+//#import "YYKit/UIApplication+YYAdd.h"
+#define DOCPATH [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject]
+#import "NITools/NISandBoxTools.h"
 
 @interface NIViewController ()
 @property(nonatomic,strong) UIButton *btnNext;
@@ -37,12 +41,42 @@
     [self printMacro];
     [self tag015_eg];
     [self showNINetworkDetectionView];
+<<<<<<< HEAD
     
     NSString *idfv = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
     NSLog(@"---idfv:%@",idfv);
+=======
+    //[self getDocumentPath];
+    //[self getDocumentPath2];
+    [self getDocumentPath3];
+>>>>>>> 7957b89383be92c319a5d100865b236a3079790d
 }
+
+/// 测试获取沙盒Document路径
+-(void)getDocumentPath{
+    NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    NSLog(@"---docPath:%@",docPath);
+}
+-(void)getDocumentPath2{
+    NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
+    NSLog(@"---docPath:%@",docPath);
+}
+-(void)getDocumentPath3{
+    NSString *docPath = DOCPATH;
+    NSLog(@"---docPath:%@",docPath);
+    
+//    NSString *homeDir = NSHomeDirectory();
+//    NSLog(@"---homeDir:%@",homeDir);
+    
+    NSLog(@"---homeDir:%@",[NISandBoxTools getHomeDir]);
+    
+}
+
+
+
+/// 展示断网监测结果页面
 -(void)showNINetworkDetectionView{
-    [self.view addSubview:self.networkDetectionView];
+    //[self.view addSubview:self.networkDetectionView];
     /**
      //*自定义网络异常视图放到每个控制器视图-最上层
      UIWindow* mainWindow = [self lastWindow];
@@ -119,17 +153,24 @@
          [self.view showHUDMessage:@"btnExitBlock"];
      };
      */
-     NIPrivacyView* priView = [[NIPrivacyView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
-     [self.view addSubview:priView];
-     priView.btnOKBlock = ^{
-         [self.view showHUDMessage:@"btnOKBlock"];
-     };
-     priView.btnExitBlock = ^{
-         [self.view showHUDMessage:@"btnExitBlock"];
-     };
-     priView.privacyBlock = ^{
-       [self.view showHUDMessage:@"隐私详情"];
-     };
+//     NIPrivacyView* priView = [[NIPrivacyView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
+//     [self.view addSubview:priView];
+//     @weakify(priView)
+//     priView.btnOKBlock = ^{
+//         @strongify(priView)
+//         [self.view showHUDMessage:@"btnOKBlock"];
+//         [priView removeFromSuperview];
+//     };
+//     priView.btnExitBlock = ^{
+//         @strongify(priView)
+//         [self.view showHUDMessage:@"btnExitBlock"];
+//         [priView removeFromSuperview];
+//     };
+//     priView.privacyBlock = ^{
+//         @strongify(priView)
+//         [self.view showHUDMessage:@"隐私详情"];
+//         [priView removeFromSuperview];
+//     };
 }
 
 /// 懒加载

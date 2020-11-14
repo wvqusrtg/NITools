@@ -24,6 +24,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// @return 版本号相等,返回0; v1小于v2,返回-1; 否则返回1.
 + (NSInteger)NICompareVersion:(NSString *)v1 to:(NSString *)v2;
 
+
+/// 获取当前app版本
++ (NSString*)NIgetCurrentVersion;
 @end
 
 NS_ASSUME_NONNULL_END
