@@ -41,15 +41,15 @@
     [self printMacro];
     [self tag015_eg];
     [self showNINetworkDetectionView];
-<<<<<<< HEAD
+
     
     NSString *idfv = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
     NSLog(@"---idfv:%@",idfv);
-=======
+
     //[self getDocumentPath];
     //[self getDocumentPath2];
     [self getDocumentPath3];
->>>>>>> 7957b89383be92c319a5d100865b236a3079790d
+
 }
 
 /// 测试获取沙盒Document路径

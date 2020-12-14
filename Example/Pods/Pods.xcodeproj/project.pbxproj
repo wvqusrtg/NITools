@@ -64,6 +64,8 @@
 		4F911F58CBBD0C0709237B6014F1B71A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F2D26A662B4235A19624CFD86C0DBF /* Foundation.framework */; };
 		5036C1D6D87D4DA731C972A410C17ABC /* AFNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C89EA9C34DE91C2BA1C889D37EE266FE /* AFNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55C06E913FC810D6DEDD08763C2DAA56 /* YYTextInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 00C523AAE070EA4F75641EC4D2E21E22 /* YYTextInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59CEC3A8258743D000A6EA57 /* UITextField+Check.h in Headers */ = {isa = PBXBuildFile; fileRef = 59CEC3A6258743D000A6EA57 /* UITextField+Check.h */; };
+		59CEC3A9258743D000A6EA57 /* UITextField+Check.m in Sources */ = {isa = PBXBuildFile; fileRef = 59CEC3A7258743D000A6EA57 /* UITextField+Check.m */; };
 		5D58A23B8FA0777A91B50A051B570E21 /* UIImage+NILibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 6147F3DA0DDF8E30855BBD86F1C294FC /* UIImage+NILibrary.m */; };
 		5DC405C3A53D2B8540B58FB0816F4734 /* YYTextDebugOption.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9E98E4DDC078C5887E150B3047F421 /* YYTextDebugOption.m */; };
 		5E2318BEC8F78A66FCCF6ADE02C9C2BF /* NIMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = F42E644987CA67F740B6C133EB548A9D /* NIMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -271,14 +273,14 @@
 		1AE162E410273358CDF03678161A3180 /* UIPasteboard+YYText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIPasteboard+YYText.m"; path = "YYText/Utility/UIPasteboard+YYText.m"; sourceTree = "<group>"; };
 		1B91F6DA9ECDB65C437ADFAB58D5D7F7 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
 		1ED4356B788C5184DA035ACA8E38FA1E /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
-		1FFED36A657123030ABB700256D73F15 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Masonry.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FFED36A657123030ABB700256D73F15 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21316687E7610CEEB8ABA742CD09A7D9 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
 		21F6C83EFB3CA37EC219C5FECD045447 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
 		2324C5DF136238C0282FBB7F17806C03 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		23BC1F49E932505464647D1E36000A3D /* UIView+NIFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+NIFrame.h"; path = "NITools/Classes/NICategory/UIView+NIFrame.h"; sourceTree = "<group>"; };
 		24441850E868E5543E08B4F3755C102F /* NISandBoxTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NISandBoxTools.m; path = NITools/Classes/NISandBoxTool/NISandBoxTools.m; sourceTree = "<group>"; };
 		24763B7D818B61030DD21AF61DB1F93D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		26F30FE2148BC4EE4868610538100BC1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		26F30FE2148BC4EE4868610538100BC1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2993779DBAE4C92C6577EB931CF1B6BB /* Pods-NITools_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NITools_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2D0A033656BCBB5ABFD5F379B1192C8D /* NIPrivacyView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NIPrivacyView.m; path = NITools/Classes/NIView/NIPrivacyView.m; sourceTree = "<group>"; };
 		2D8AEE7B961CF41FDC9F7569AAB2B6DF /* YYTextLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextLayout.m; path = YYText/Component/YYTextLayout.m; sourceTree = "<group>"; };
@@ -315,13 +317,15 @@
 		53991861D7C34D4B41734BCC11F29B62 /* UIView+YYText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+YYText.m"; path = "YYText/Utility/UIView+YYText.m"; sourceTree = "<group>"; };
 		545BC6F3EA126BF1232CC8EF219FDC11 /* Pods-NITools_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NITools_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		578E194A30B9E633492122F237D56427 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		59CEC3A6258743D000A6EA57 /* UITextField+Check.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITextField+Check.h"; path = "NITools/Classes/NICategory/UITextField+Check.h"; sourceTree = "<group>"; };
+		59CEC3A7258743D000A6EA57 /* UITextField+Check.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITextField+Check.m"; path = "NITools/Classes/NICategory/UITextField+Check.m"; sourceTree = "<group>"; };
 		5B9397684D40C6148866316EFBE133BE /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
 		5BE88056A419D1E62D594BD456CBDEF3 /* YYTextParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextParser.h; path = YYText/String/YYTextParser.h; sourceTree = "<group>"; };
 		5DA7B3D735B2B83B77DB2C36DC1D076B /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
 		5DEE66012138A5619A0C9DAD6348C4D3 /* Masonry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Masonry.modulemap; sourceTree = "<group>"; };
 		5EBE7343D20C572E8942073C1191A40C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		5EF0C9F59CD9214C5D9A1669BDAA2E60 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
-		5F2B99B77CE6C69456D9A72E94CC7B3F /* NITools.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = NITools.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5F2B99B77CE6C69456D9A72E94CC7B3F /* NITools.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = NITools.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		60BA1883B8792BA69B66AC43853CCD5F /* NITools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NITools.debug.xcconfig; sourceTree = "<group>"; };
 		6147F3DA0DDF8E30855BBD86F1C294FC /* UIImage+NILibrary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+NILibrary.m"; path = "NITools/Classes/NICategory/UIImage+NILibrary.m"; sourceTree = "<group>"; };
 		6163EE2059234769489755ADC69FD71B /* YYTextMagnifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextMagnifier.m; path = YYText/Component/YYTextMagnifier.m; sourceTree = "<group>"; };
@@ -331,12 +335,12 @@
 		656D3F3ECDC60D0255FBBB645E64BD87 /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
 		65A3E1157593FBBD8AAE5A3C9BDFD356 /* Masonry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.debug.xcconfig; sourceTree = "<group>"; };
 		65A6B1AAD4D1879B7FD92A19F218F6D2 /* YYTextLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextLayout.h; path = YYText/Component/YYTextLayout.h; sourceTree = "<group>"; };
-		666855CED198E3B04A5AB726978F8619 /* NITools.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = NITools.bundle; path = "NITools-NITools.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6CFB4BA1B9EA47829CB050D44CFA7C7B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		666855CED198E3B04A5AB726978F8619 /* NITools.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NITools.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CFB4BA1B9EA47829CB050D44CFA7C7B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		6E0A36A4CEAF92B4FB7CD0C8F9928B18 /* Pods-NITools_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NITools_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6EE4DDB460FF85885F08B398C015F906 /* YYTextRunDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextRunDelegate.h; path = YYText/String/YYTextRunDelegate.h; sourceTree = "<group>"; };
 		6F7C4F9B1EFE3A88A46C63058F88B345 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
-		71762A728913EB440C97D3616D291AF3 /* YYText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YYText.framework; path = YYText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71762A728913EB440C97D3616D291AF3 /* YYText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		729F844461B5F86B47E769D780C223B2 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
 		73624960D63331EB0BEF33143755D14C /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
 		75816757CFB30A5A8E34FAEC4D077FC3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -378,21 +382,21 @@
 		99C79700F5F6CCA628DC6C8B5E51D451 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
 		99FE1C45630E765B1363B11C7A2FE1E2 /* YYText-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYText-umbrella.h"; sourceTree = "<group>"; };
 		9B50AAFA0667BE5A1E259451A01D1646 /* NIVersionManagerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NIVersionManagerView.m; path = NITools/Classes/NIView/NIVersionManagerView.m; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DCCA400B0441C67E4794A59E5AC7523 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
 		9EBCAF2DC70F84F3762F7206B26566C7 /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
 		A05E165F320119F139392DEB6F7A09C4 /* UIColor+NIColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+NIColor.h"; path = "NITools/Classes/NICategory/UIColor+NIColor.h"; sourceTree = "<group>"; };
 		A1AFA093F04983AF2527DBA987CE2CE4 /* Pods-NITools_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NITools_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A1BC19FF51B8334146AA185DB6B24601 /* netError.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = netError.png; path = NITools/Assets/netError.png; sourceTree = "<group>"; };
 		A2B94CE338A31F224638E1639C659BB9 /* YYTextTransaction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextTransaction.m; path = YYText/Utility/YYTextTransaction.m; sourceTree = "<group>"; };
-		A2C1092A5979A7A30E1E84F531484D3F /* Pods_NITools_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NITools_Tests.framework; path = "Pods-NITools_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4FA15D44DF6BAC7550EDEED10862AA3 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AFNetworking.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2C1092A5979A7A30E1E84F531484D3F /* Pods_NITools_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NITools_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4FA15D44DF6BAC7550EDEED10862AA3 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A623B94095F174A55063502463DE1A9B /* YYTextAsyncLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextAsyncLayer.h; path = YYText/Utility/YYTextAsyncLayer.h; sourceTree = "<group>"; };
 		A9EB97423CB4BA86DB7C86CA0FA9D055 /* YYTextSelectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextSelectionView.m; path = YYText/Component/YYTextSelectionView.m; sourceTree = "<group>"; };
 		AAFDD0F7A0CC1597E0B20E63BAF15FB1 /* YYTextAsyncLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextAsyncLayer.m; path = YYText/Utility/YYTextAsyncLayer.m; sourceTree = "<group>"; };
 		AB0BDBFCC03CC9C10656DC342DA1FD79 /* YYLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYLabel.m; path = YYText/YYLabel.m; sourceTree = "<group>"; };
 		AC2884314D4DFBF08828592D32E2CE8D /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
-		AC4C5D1DE49BF44052475D7F6C9315CD /* NITools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NITools.framework; path = NITools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC4C5D1DE49BF44052475D7F6C9315CD /* NITools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NITools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD12DC3D9ADED5552CB4A5CEA88D6C68 /* YYText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYText.h; path = YYText/YYText.h; sourceTree = "<group>"; };
 		AD307B5DC5CB059515AA02EFADDEFD8D /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		B22A3E9C5E3133271BD93D9084FF5CCB /* YYText-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YYText-dummy.m"; sourceTree = "<group>"; };
@@ -444,7 +448,7 @@
 		F76FC1C3CFE2A2583CA38B2339E13A39 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
 		F849B10999DE376BCD164E2068A32DBA /* YYTextAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextAttribute.h; path = YYText/String/YYTextAttribute.h; sourceTree = "<group>"; };
 		FCF7915BA9DE3AE37DADBC9AAB262C9E /* YYTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextView.h; path = YYText/YYTextView.h; sourceTree = "<group>"; };
-		FEFC926292CB182ED48A5255DF2F1C0B /* Pods_NITools_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NITools_Example.framework; path = "Pods-NITools_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEFC926292CB182ED48A5255DF2F1C0B /* Pods_NITools_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NITools_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF4E734A6188962A3CF47221147D3CF0 /* YYTextDebugOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextDebugOption.h; path = YYText/Component/YYTextDebugOption.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -553,7 +557,6 @@
 				74E0BE994BB6AEAF01A51694A2FCBF68 /* Support Files */,
 				7C40D69350FD0FB57859F2CBD278DAFB /* UIKit */,
 			);
-			name = AFNetworking;
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
@@ -660,7 +663,6 @@
 				DD6430875389169EFC6A572F220FFF78 /* YYTextWeakProxy.m */,
 				8051836C4E7AE9430D60E77CB47CA21C /* Support Files */,
 			);
-			name = YYText;
 			path = YYText;
 			sourceTree = "<group>";
 		};
@@ -819,6 +821,8 @@
 		8CD7C99082D95444036D8A5E6F81F438 /* NICategory */ = {
 			isa = PBXGroup;
 			children = (
+				59CEC3A6258743D000A6EA57 /* UITextField+Check.h */,
+				59CEC3A7258743D000A6EA57 /* UITextField+Check.m */,
 				4EAADD425318F55A4EB98B28C34E38B4 /* NSBundle+NILibrary.h */,
 				B5C8DD80850A24996C01D3863C69E12B /* NSBundle+NILibrary.m */,
 				F18DA0B2F74BE01B61209129F1B2059A /* NSString+VersionCompare.h */,
@@ -863,7 +867,6 @@
 				3B3CDF8FC742AD405C975678FDF8E145 /* ViewController+MASAdditions.m */,
 				2A62AB3A93B217A5AAB0DE0FF2814975 /* Support Files */,
 			);
-			name = Masonry;
 			path = Masonry;
 			sourceTree = "<group>";
 		};
@@ -1046,6 +1049,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				635CF8FFABDD5C211BC29704902BF2AB /* NIIPTools.h in Headers */,
+				59CEC3A8258743D000A6EA57 /* UITextField+Check.h in Headers */,
 				5E2318BEC8F78A66FCCF6ADE02C9C2BF /* NIMacro.h in Headers */,
 				7602F01D33F7EBB9FAD9064685F88773 /* NINetworkDetectionView.h in Headers */,
 				909F3F8ABDFABD4420E4F019DC03BF17 /* NIPrivacyView.h in Headers */,
@@ -1361,6 +1365,7 @@
 				C6328549A7BB46EF39DB0C1D492525F3 /* NSString+VersionCompare.m in Sources */,
 				69CA9FF0DB53CCCC449E59A365EBFFCA /* UIColor+NIColor.m in Sources */,
 				5D58A23B8FA0777A91B50A051B570E21 /* UIImage+NILibrary.m in Sources */,
+				59CEC3A9258743D000A6EA57 /* UITextField+Check.m in Sources */,
 				675C8FBF0BDE10A8E4F3870C163B8159 /* UIView+NIFrame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1727,8 +1732,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
