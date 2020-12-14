@@ -27,6 +27,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
  - 计划更新：组件的色系要能统一修改、组件属性尽量多开放、属性能精细修改、（NITools待更新）
  
  - tag:0.2.2 - NITools:(UITextField+Check)
+```             
              - // 判断输入框内容是否为空
              /*
                中国移动:
@@ -46,7 +47,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
                */
              - // 判断手机号码格式是否正确
              - // 判断秘密格式为 6 - 18 位数字和字母组成
-             - // 长度是否超过6位数并小于18位数             
+             - // 长度是否超过6位数并小于18位数
+```                  
  - tag:0.2.1 - NITools:(NSString+VersionCompare)新增获取当前版本号(实例)方法;
              - NITools:NISandBoxTools.h/m 工具类新增;
  - 2020年10月12日16:52:37-Example 测试案例里新增 pod 引入 pod 'YYKit', '~> 1.0.9',实际项目当中一定注意YYkit的完全引入和单独引入某一个分支可能会产生冲突，这个项目搭建时候一定要好好斟酌
@@ -73,7 +75,7 @@ NITools is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'NITools', '~> 0.2.1'
+pod 'NITools', '~> 0.2.2'
 ```
 
 ## Author
