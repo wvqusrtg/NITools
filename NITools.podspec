@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NITools'
-  s.version          = '0.2.1'
-  s.summary          = '个人工具类集合整理:尝试组件开发 - tag:0.2.1 - NITools：NISandBoxTools.h/m 工具类新增'
+  s.version          = '0.2.2'
+  s.summary          = '个人工具类集合整理:尝试组件开发 - tag:0.2.2 - NITools:(UITextField+Check) 工具类新增'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = ' - tag:0.2.1 - NITools：NISandBoxTools.h/m 工具类新增'
+  s.description      = ' - tag:0.2.2 - NITools:(UITextField+Check) 工具类新增'
   
   s.homepage         = 'https://github.com/wvqusrtg/NITools'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
