@@ -20,6 +20,8 @@
 //#import "YYKit/UIApplication+YYAdd.h"
 #define DOCPATH [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject]
 #import "NITools/NISandBoxTools.h"
+#import "NITools/NSObject+nil_null_NSNull.h"
+
 
 @interface NIViewController ()
 @property(nonatomic,strong) UIButton *btnNext;
@@ -49,10 +51,10 @@
     //[self getDocumentPath];
     //[self getDocumentPath2];
     [self getDocumentPath3];
+    NSLog(@"---%@",[NSObject convertNull:@""]);
 
 }
-
-/// 测试获取沙盒Document路径
+#pragma mark - 测试获取沙盒Document路径
 -(void)getDocumentPath{
     NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
     NSLog(@"---docPath:%@",docPath);
@@ -72,9 +74,7 @@
     
 }
 
-
-
-/// 展示断网监测结果页面
+#pragma mark - 展示断网监测结果页面
 -(void)showNINetworkDetectionView{
     //[self.view addSubview:self.networkDetectionView];
     /**
@@ -85,9 +85,7 @@
      */
 }
 
-/**
- iOS 应用获取最上层全屏 Window 的正确方法
- */
+#pragma mark - iOS 应用获取最上层全屏 Window 的正确方法
 - (UIWindow *)lastWindow{
     NSArray *windows = [UIApplication sharedApplication].windows;
     for(UIWindow *window in [windows reverseObjectEnumerator]) {
