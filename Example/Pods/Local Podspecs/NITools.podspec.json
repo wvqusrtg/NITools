@@ -1,8 +1,8 @@
 {
   "name": "NITools",
-  "version": "0.2.0",
-  "summary": "个人工具类集合整理:尝试组件开发 - tag:0.2.0 - NITools：pod类里使用图片资源文件-优化抽离NSBundle+NILibrary、UIImage+NILibrary分类",
-  "description": "- tag:0.2.0 - NITools：pod类里使用图片资源文件-优化抽离NSBundle+NILibrary、UIImage+NILibrary分类",
+  "version": "0.2.1",
+  "summary": "个人工具类集合整理:尝试组件开发 - tag:0.2.1 - NITools：NISandBoxTools.h/m 工具类新增",
+  "description": "- tag:0.2.1 - NITools：NISandBoxTools.h/m 工具类新增",
   "homepage": "https://github.com/wvqusrtg/NITools",
   "license": {
     "type": "MIT",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/wvqusrtg/NITools.git",
-    "tag": "0.2.0"
+    "tag": "0.2.1"
   },
   "platforms": {
     "ios": "8.0"
