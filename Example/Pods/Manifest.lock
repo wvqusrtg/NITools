@@ -15,61 +15,32 @@ PODS:
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
   - Masonry (1.1.0)
-<<<<<<< HEAD
-  - NITools (0.2.1):
+  - NITools (0.2.3):
     - AFNetworking
     - Masonry
-    - NITools/NICategory (= 0.2.1)
-    - NITools/NIIPTool (= 0.2.1)
-    - NITools/NIMacro (= 0.2.1)
-    - NITools/NISandBoxTool (= 0.2.1)
-    - NITools/NIView (= 0.2.1)
+    - NITools/NICategory (= 0.2.3)
+    - NITools/NIIPTool (= 0.2.3)
+    - NITools/NIMacro (= 0.2.3)
+    - NITools/NISandBoxTool (= 0.2.3)
+    - NITools/NIView (= 0.2.3)
     - YYText
-  - NITools/NICategory (0.2.1):
-    - AFNetworking
-    - Masonry
-    - YYText
-  - NITools/NIIPTool (0.2.1):
+  - NITools/NICategory (0.2.3):
     - AFNetworking
     - Masonry
     - YYText
-  - NITools/NIMacro (0.2.1):
+  - NITools/NIIPTool (0.2.3):
     - AFNetworking
     - Masonry
     - YYText
-  - NITools/NISandBoxTool (0.2.1):
+  - NITools/NIMacro (0.2.3):
     - AFNetworking
     - Masonry
     - YYText
-  - NITools/NIView (0.2.1):
-=======
-  - NITools (0.2.2):
-    - AFNetworking
-    - Masonry
-    - NITools/NICategory (= 0.2.2)
-    - NITools/NIIPTool (= 0.2.2)
-    - NITools/NIMacro (= 0.2.2)
-    - NITools/NISandBoxTool (= 0.2.2)
-    - NITools/NIView (= 0.2.2)
-    - YYText
-  - NITools/NICategory (0.2.2):
+  - NITools/NISandBoxTool (0.2.3):
     - AFNetworking
     - Masonry
     - YYText
-  - NITools/NIIPTool (0.2.2):
-    - AFNetworking
-    - Masonry
-    - YYText
-  - NITools/NIMacro (0.2.2):
-    - AFNetworking
-    - Masonry
-    - YYText
-  - NITools/NISandBoxTool (0.2.2):
-    - AFNetworking
-    - Masonry
-    - YYText
-  - NITools/NIView (0.2.2):
->>>>>>> 62801f80561faad954f4671d877e300def737385
+  - NITools/NIView (0.2.3):
     - AFNetworking
     - Masonry
     - NITools/NICategory
@@ -93,11 +64,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-<<<<<<< HEAD
-  NITools: 24093fe935d8f60462634760278e3e64cbc029bb
-=======
-  NITools: 3a32172b1cccd56d9b069df31d9673e8f9132508
->>>>>>> 62801f80561faad954f4671d877e300def737385
+  NITools: 67f00d30dafb723f3952425db2a7f51a288feed1
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
 PODFILE CHECKSUM: 8ceff5e9b2063193f4f15271eb75adfd939b7861

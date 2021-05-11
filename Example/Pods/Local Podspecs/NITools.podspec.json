@@ -1,14 +1,8 @@
 {
   "name": "NITools",
-<<<<<<< HEAD
-  "version": "0.2.1",
-  "summary": "个人工具类集合整理:尝试组件开发 - tag:0.2.1 - NITools：NISandBoxTools.h/m 工具类新增",
-  "description": "- tag:0.2.1 - NITools：NISandBoxTools.h/m 工具类新增",
-=======
-  "version": "0.2.2",
-  "summary": "个人工具类集合整理:尝试组件开发 - tag:0.2.2 - NITools:(UITextField+Check) 工具类新增",
-  "description": "- tag:0.2.2 - NITools:(UITextField+Check) 工具类新增",
->>>>>>> 62801f80561faad954f4671d877e300def737385
+  "version": "0.2.3",
+  "summary": "个人工具类集合整理:尝试组件开发 - NITools:(NSObject+nil_null_NSNull.h/m 新增NSObject分类对空对象的处理)",
+  "description": "- tag:0.2.3 - NITools:(NSObject+nil_null_NSNull.h/m 新增NSObject分类对空对象的处理)",
   "homepage": "https://github.com/wvqusrtg/NITools",
   "license": {
     "type": "MIT",
@@ -19,11 +13,7 @@
   },
   "source": {
     "git": "https://github.com/wvqusrtg/NITools.git",
-<<<<<<< HEAD
-    "tag": "0.2.1"
-=======
-    "tag": "0.2.2"
->>>>>>> 62801f80561faad954f4671d877e300def737385
+    "tag": "0.2.3"
   },
   "platforms": {
     "ios": "8.0"

@@ -25,6 +25,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## 版本更新内容
  - 计划更新：组件的色系要能统一修改、组件属性尽量多开放、属性能精细修改、（NITools待更新）
+ - tag:0.2.4 - NITools:(NSObject+ReadJsonFile)读取本地json文件,返回可能为NSArray/NSDictionary 「2021年05月11日19:59:07」
  - tag:0.2.3 - NITools:(NSObject+nil_null_NSNull.h/m 新增NSObject分类对空对象的处理)
  - tag:0.2.2 - NITools:(UITextField+Check)
 ```             
